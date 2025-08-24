@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F2E68AB3-161D-28F3-17E1-8CC4DA2D419F" name="Equipaje">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 02:56:07 UTC</createdTime>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Código maleta" id="4DEB1F6A-8A72-07D3-623A-629113A61ADA">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 02:56:25 UTC</createdTime>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="color" id="DAF58491-4037-982F-F2A3-E05A3123E624">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 02:56:59 UTC</createdTime>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="peso" id="9603612E-9553-53D5-8B60-580BEDFABF7A">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 02:57:04 UTC</createdTime>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripción" id="11ACD9AD-7F08-2561-4B66-A1B3FE6A92BE">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 02:57:08 UTC</createdTime>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pasajero" id="E6566CF5-C147-E9E3-1B71-768E9F351D59">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 02:57:53 UTC</createdTime>
+<generatorID>29B5FFD0-BD3E-4E5A-184E-0DD7319AEDBE</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>F58FBF38-B6E0-244E-277E-67FD6D547F3A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DF7355F3-02FA-B804-8024-5B438351B799" name="Equipaje PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:00:24 UTC</createdTime>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4DEB1F6A-8A72-07D3-623A-629113A61ADA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

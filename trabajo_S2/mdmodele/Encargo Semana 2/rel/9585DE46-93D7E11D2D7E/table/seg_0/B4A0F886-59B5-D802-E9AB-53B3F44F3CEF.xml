@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B4A0F886-59B5-D802-E9AB-53B3F44F3CEF" name="Piloto">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>9D96A75D-21C9-BE40-45D9-186F32F6C93E</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Horas_vuelo_acumuladas" id="16449ABA-5965-827B-509C-B14234A421D5">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>B86D8BE2-1527-B64E-2D4E-0AE79803EA1B</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AFP" id="5F16150D-18D9-2A40-8A0D-64B986275EB7">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>948F81FC-3713-17E4-E8EB-F235BA864D52</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Empleado_Rut" id="BCF6F2FD-7D3F-8502-D838-E440645B7CC1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>4DDED954-3907-F66D-3D84-9E74C0466ACD</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7682110C-E308-B1A0-2F31-932A48E9FBBD" referredColumn="E695C0BB-59F1-BD9B-9993-1F764A878EEF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="91061B61-D930-743C-D165-CCAB66C2C8F7" name="Piloto_Empleado_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>F4E315E9-7866-4786-4298-4EC55DDA8735</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCF6F2FD-7D3F-8502-D838-E440645B7CC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9D96A75D-21C9-BE40-45D9-186F32F6C93E" name="Piloto">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:05:06 UTC</createdTime>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Horas vuelo acumuladas" id="B86D8BE2-1527-B64E-2D4E-0AE79803EA1B">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:06:03 UTC</createdTime>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AFP" id="948F81FC-3713-17E4-E8EB-F235BA864D52">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:06:12 UTC</createdTime>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Rut" id="4DDED954-3907-F66D-3D84-9E74C0466ACD">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:07:11 UTC</createdTime>
+<generatorID>F4E315E9-7866-4786-4298-4EC55DDA8735</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>9FC91184-0FAE-5499-C5A3-39A28A2EF986</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

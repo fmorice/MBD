@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF25C02C-18CF-409F-4775-9359781F310A" name="Pasajero">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>1D319434-78FC-36EB-41B5-7A3C5CC01886</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pasajero" id="6A6CC7D6-86A0-CC5E-AA8A-A0814612D37E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>F58FBF38-B6E0-244E-277E-67FD6D547F3A</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="B055FB3D-4E9A-C785-E3CF-7960C53B36E5">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>63CAF075-3F1C-7A4F-1A58-57C2E20380E1</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="A7725742-42C5-2F8C-EC2B-2ECB4D333B7E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>5118C810-A48D-CE84-0C9A-1A20360EC357</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dirección" id="B48CA624-AD62-7E11-2B65-3B6686266E8C">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>572BB524-F99C-1297-37FC-47455040F386</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Avión_matrícula" id="81CA0958-2F47-5821-4183-B9B72977C123">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>88BAC7EF-8BD3-573C-9225-871533B019A8</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C1503DE-1188-C36C-8CAA-BA729AFDA366" referredColumn="991D46B1-0213-4224-5CBE-AE3ABD3219B1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="241E9085-5443-908A-AC84-F0E754AAE509" name="Pasajero_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>BD1F48A7-B9B1-DF91-0A00-750F3DCF3416</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A6CC7D6-86A0-CC5E-AA8A-A0814612D37E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A9692E3-3360-25FB-026F-F4BA7DBF3E9B" name="Pasajero_Avión_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>0E687952-D8E1-B097-96D3-67B107090AEA</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81CA0958-2F47-5821-4183-B9B72977C123"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

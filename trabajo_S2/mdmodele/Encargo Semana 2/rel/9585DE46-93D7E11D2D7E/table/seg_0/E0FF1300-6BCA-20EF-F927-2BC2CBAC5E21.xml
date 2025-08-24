@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0FF1300-6BCA-20EF-F927-2BC2CBAC5E21" name="Avión">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>0C95FA20-FBEC-4D8C-7E57-0427F1EA5ECB</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="matrícula" id="991D46B1-0213-4224-5CBE-AE3ABD3219B1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>BB2C8F67-1D4B-3E8B-D589-754DD471AFBE</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="marca" id="984CB65D-D9D5-19DA-D6CC-1BFA6E27411F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>9CB927E9-6626-A4E4-6DA9-7591E6EB013C</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="modelo" id="04FEA57C-66B7-BD07-3AD5-0F5FF2D41368">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>F13CF60B-8218-4232-FD4A-30C713C792CE</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacidad" id="F6B1A566-62CB-1B0F-3F57-5FFD0C816F36">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>017917FA-F8E8-C7E0-DFC0-28FB75455004</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47D13E16-D938-F00A-581D-0A0E3A8500E2" name="Avión_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>AF105298-D508-B34B-072E-A3F0E0D40BFD</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="991D46B1-0213-4224-5CBE-AE3ABD3219B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

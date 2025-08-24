@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6C1503DE-1188-C36C-8CAA-BA729AFDA366" containerWithKeyObject="BF25C02C-18CF-409F-4775-9359781F310A" localFKIndex="8A9692E3-3360-25FB-026F-F4BA7DBF3E9B" name="Pasajero_Avión_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-24 03:52:20 UTC</createdTime>
+<generatorID>0E687952-D8E1-B097-96D3-67B107090AEA</generatorID>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<referredTableLongName>Avión</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E0FF1300-6BCA-20EF-F927-2BC2CBAC5E21</referredTableID>
+<keyObject>47D13E16-D938-F00A-581D-0A0E3A8500E2</keyObject>
+<referredKeyID>47D13E16-D938-F00A-581D-0A0E3A8500E2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>matrícula</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

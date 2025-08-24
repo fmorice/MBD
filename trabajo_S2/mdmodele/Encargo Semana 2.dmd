@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Encargo Semana 2" id="6DA4AD30-25C8-239A-9A4E-EBAC6C39036B" version="3.5">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-23 22:09:33 UTC</createdTime>
+<ownerDesignName>Encargo Semana 2</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>6DA4AD30-25C8-239A-9A4E-EBAC6C39036B</designId>
+</OSDM_Design>
