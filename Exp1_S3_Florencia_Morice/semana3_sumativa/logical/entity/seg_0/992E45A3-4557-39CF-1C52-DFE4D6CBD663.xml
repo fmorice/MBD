@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="992E45A3-4557-39CF-1C52-DFE4D6CBD663" name="PERSONAL">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 16:59:49 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_personal" id="76EAFED3-6226-BF72-A0B7-20B3796E130E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 17:24:33 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_persona" id="7D478290-7CA7-CE1C-633F-341055BA4C22">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 17:25:40 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_ingreso" id="CDF262D6-A9B4-C3B0-D43D-93308FFE20BF">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 17:28:11 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_residencia" id="E3E88E5B-8E8D-5318-CC52-6BBD69ADA6BE">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 17:42:07 UTC</createdTime>
+<generatorID>44B30907-0847-0C27-357C-B0BA9F19EA81</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>5179F7EC-FC3C-A0DC-FDE4-17051DDA4ED7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut1" id="B02F9432-E60A-CE30-20C7-30F11134AE0C">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:44:58 UTC</createdTime>
+<generatorID>7C90D5E3-0409-E180-760B-82C770825287</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>C0DC53C7-F9FE-9992-4433-A096F030129A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ED8D0BBD-8968-AB8A-5281-FACE39B21319" name="PERSONAL PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 17:25:07 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E3E88E5B-8E8D-5318-CC52-6BBD69ADA6BE</attributeRef>
+<attributeRef>B02F9432-E60A-CE30-20C7-30F11134AE0C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

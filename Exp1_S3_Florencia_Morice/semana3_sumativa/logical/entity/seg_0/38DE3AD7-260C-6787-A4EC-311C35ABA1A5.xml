@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="38DE3AD7-260C-6787-A4EC-311C35ABA1A5" name="CONTRATO">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 17:38:08 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_apoderado" id="FD8DE2C1-E194-61B4-E1D6-9A4B3B9FDDBD">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:19:00 UTC</createdTime>
+<generatorID>51DBCAB1-497E-1A86-593B-F36FC65DA330</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="false"/>
+</engineerTo>
+<referedAttribute>62482C1B-B60C-361B-944E-7D6DB5327B95</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_contrato" id="5E4E3F48-8FEC-F6B6-456C-35496A520913">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:38:31 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="30A30671-5F22-95A9-6936-F998D3BE8602">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:53:54 UTC</createdTime>
+<generatorID>51DBCAB1-497E-1A86-593B-F36FC65DA330</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="false"/>
+</engineerTo>
+<referedAttribute>619C12DB-E32C-FCDF-C0BF-AE4547D76734</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DA5F95E5-767F-A078-2164-7F04DBE14F31" name="CONTRATO PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:38:52 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5E4E3F48-8FEC-F6B6-456C-35496A520913</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

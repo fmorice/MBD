@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EE156FF3-B7F3-6DE9-49AC-C54BF88583D5" name="APODERADO">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 17:03:06 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_apoderado" id="62482C1B-B60C-361B-944E-7D6DB5327B95">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:18:13 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="relacion_tipo" id="0DD2068E-B284-B6E0-71C3-4C41F21FD0C1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:36:52 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefono_emergencia" id="F1680FDE-13FD-7A85-8B9F-F2F40A398A4C">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:37:44 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="619C12DB-E32C-FCDF-C0BF-AE4547D76734">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:53:54 UTC</createdTime>
+<generatorID>E9A56AAC-353F-C522-86F9-87911F063798</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>C0DC53C7-F9FE-9992-4433-A096F030129A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C7F20F07-16D2-B4CD-5B9D-AD6394F946C2" name="APODERADO PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:18:58 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>62482C1B-B60C-361B-944E-7D6DB5327B95</attributeRef>
+<attributeRef>619C12DB-E32C-FCDF-C0BF-AE4547D76734</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

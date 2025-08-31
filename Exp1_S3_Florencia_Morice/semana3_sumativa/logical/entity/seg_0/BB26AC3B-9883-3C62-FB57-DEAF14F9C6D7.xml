@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BB26AC3B-9883-3C62-FB57-DEAF14F9C6D7" name="PERMANENTE">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 16:58:03 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>824D8D35-B8A1-36B3-89FF-1D41290E6F01</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_permanente" id="78AF7085-781D-E5E8-A332-226C3835B125">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:35:44 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3E3D555D-8D08-C7AD-A4CB-51B3EE464136" name="PERMANENTE PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:36:03 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>78AF7085-781D-E5E8-A332-226C3835B125</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

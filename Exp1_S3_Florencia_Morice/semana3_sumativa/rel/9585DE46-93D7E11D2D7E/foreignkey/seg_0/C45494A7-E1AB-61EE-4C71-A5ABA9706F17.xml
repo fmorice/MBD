@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C45494A7-E1AB-61EE-4C71-A5ABA9706F17" containerWithKeyObject="69176EF2-0039-D856-DA3C-6C5A61B99967" localFKIndex="94449D08-233C-FE0A-AC09-8FD61B3EE016" name="CONTRATO_APODERADO_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<generatorID>51DBCAB1-497E-1A86-593B-F36FC65DA330</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<referredTableLongName>APODERADO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>36DE8AB1-3E88-445F-45B0-8F7F98D9C317</referredTableID>
+<keyObject>C82998E4-516B-738F-E35E-636F8492CADF</keyObject>
+<referredKeyID>C82998E4-516B-738F-E35E-636F8492CADF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>APODERADO_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

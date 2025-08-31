@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="36DE8AB1-3E88-445F-45B0-8F7F98D9C317" name="APODERADO">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:51:59 UTC</createdTime>
+<generatorID>EE156FF3-B7F3-6DE9-49AC-C54BF88583D5</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="APODERADO_ID" id="0A21913E-7CB2-C935-929C-07ABE4AE98E6">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="RESIDENTE_RESIDENTE_ID" id="A8444903-4EA6-EA66-0F7C-E5F8E3647EB1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_apoderado" id="64527A51-70F3-47F3-9D65-C9785BB861E2">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>62482C1B-B60C-361B-944E-7D6DB5327B95</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RESIDENTE_id_residente" id="0AB63539-48BC-98ED-2F51-E7AB5CB938A8">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>F70C10F4-7533-50DC-AA9A-45C4A5A171F8</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2E721BB-FA49-13CC-2BA9-9FE518604559" referredColumn="8240C9E4-3461-EB77-16D9-92C0B7C08CEF"/>
+</associations>
+</Column>
+<Column name="relacion_tipo" id="FAB9CBD3-B70A-4E4C-7003-62AC7B357435">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>0DD2068E-B284-B6E0-71C3-4C41F21FD0C1</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono_emergencia" id="E30126C0-EA66-97E2-C149-612AA3F95178">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>F1680FDE-13FD-7A85-8B9F-F2F40A398A4C</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERSONA_rut" id="5D79D739-C927-DD91-A5D3-9FA64F2605D5">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:54:27 UTC</createdTime>
+<generatorID>619C12DB-E32C-FCDF-C0BF-AE4547D76734</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E59A9BB5-390A-A12C-3424-573162C59704" referredColumn="76C8C779-6067-4A5C-DD77-3EDEE64DBFC7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FA8699C6-335B-DA5B-B0F4-2EBDEB8E7BF5" name="APODERADO_id_apoderado_UN">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>C7F20F07-16D2-B4CD-5B9D-AD6394F946C2</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64527A51-70F3-47F3-9D65-C9785BB861E2"/>
+<colUsage columnID="5D79D739-C927-DD91-A5D3-9FA64F2605D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C82998E4-516B-738F-E35E-636F8492CADF" name="APODERADO_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="0A21913E-7CB2-C935-929C-07ABE4AE98E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89FF4EE3-6438-2FA0-1118-7DCF2218EB82" name="APODERADO__IDX">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4E7DC13A-6043-D7C2-D864-A156903F71CE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A8444903-4EA6-EA66-0F7C-E5F8E3647EB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="280D70EC-B95B-6765-F73B-DA1253B76855" name="APODERADO__IDXv1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4E7DC13A-6043-D7C2-D864-A156903F71CE</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0AB63539-48BC-98ED-2F51-E7AB5CB938A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38622351-37CE-B0CF-FFFE-337506572E13" name="APODERADO_RESIDENTE_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>4E7DC13A-6043-D7C2-D864-A156903F71CE</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AB63539-48BC-98ED-2F51-E7AB5CB938A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63F42D11-6423-6CA8-417D-FC7DD61C6D15" name="APODERADO_PERSONA_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:54:27 UTC</createdTime>
+<generatorID>E9A56AAC-353F-C522-86F9-87911F063798</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D79D739-C927-DD91-A5D3-9FA64F2605D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

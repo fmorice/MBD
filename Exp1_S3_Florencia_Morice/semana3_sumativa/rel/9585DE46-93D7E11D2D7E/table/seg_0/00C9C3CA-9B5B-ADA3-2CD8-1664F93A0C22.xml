@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="00C9C3CA-9B5B-ADA3-2CD8-1664F93A0C22" name="HABITACION">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:51:59 UTC</createdTime>
+<generatorID>C6F44A6D-1148-A159-4D3D-3290BDAAA2EA</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RESIDENCIA_id_residencia" id="2CC9E293-3E6A-7D65-23F1-F62042EA0E46">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<generatorID>FBCFD1BD-88CA-8ABB-035C-5AF3128F97B8</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A79021C4-6481-076B-153C-2AD3D76F2AC6" referredColumn="6FFEA3EC-79F5-60B3-0FA7-547800DFE467"/>
+</associations>
+</Column>
+<Column name="id_habitacion" id="34C182B3-B70E-1F6C-2210-3E7C234E62C8">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<generatorID>35080097-DB19-CAEC-0F28-3FB548754309</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_habitacion" id="CB9F4A4E-A5FC-F0DB-1DB3-75F0DAB7DDAE">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>AEFC8434-5BE8-F325-60AD-D312337BFEAC</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad_cama" id="0F8E8A35-DA08-DEA5-6A42-808EFA771A60">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:54:27 UTC</createdTime>
+<generatorID>2404ED78-6C89-8DFD-9652-3422DE5D5BD6</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cant_max_persona" id="AD1CA7D2-609E-FF7E-6149-5306C8BE0D07">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:54:27 UTC</createdTime>
+<generatorID>76D6E6B6-AAC0-AAC4-D5A4-59FCEDCDD2FF</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="455191F0-538B-4BA0-61E6-D031CC64F95C" name="HABITACION_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<generatorID>394F2CE0-17F9-DE8D-8950-DA9E4FA67CED</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CC9E293-3E6A-7D65-23F1-F62042EA0E46"/>
+<colUsage columnID="34C182B3-B70E-1F6C-2210-3E7C234E62C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A93B06DB-36B0-053D-5022-A538D47C31AF" name="HABITACION_RESIDENCIA_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<generatorID>7F59A029-26C8-EB9A-DACF-F798151F4DE1</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CC9E293-3E6A-7D65-23F1-F62042EA0E46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

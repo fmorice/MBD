@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D776E75-7357-A709-5218-939428BB6DBB" name="RESIDENCIA">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:51:59 UTC</createdTime>
+<generatorID>C7106285-81D4-4F89-DEEE-63ACFEDA6057</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_residencia" id="6FFEA3EC-79F5-60B3-0FA7-547800DFE467">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:51:59 UTC</createdTime>
+<generatorID>5179F7EC-FC3C-A0DC-FDE4-17051DDA4ED7</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="4BDCF7B0-F215-8D38-CDD8-4F1AEBA36815">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:51:59 UTC</createdTime>
+<generatorID>4CE7BE5B-5AFB-C4AA-C3DE-664076EB596B</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="region" id="A084B30B-897C-DE3D-8CC4-326F41E62312">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:54:27 UTC</createdTime>
+<generatorID>B3EBC403-89B5-4C87-2762-1F0D27FEEB6F</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comuna" id="4BC88BA1-A5A5-71F9-23B0-A07CF1531390">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:54:27 UTC</createdTime>
+<generatorID>62C7DE9C-6F16-474F-E4E6-1486AB730652</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="AEFB8783-470A-2C71-3591-2FD3DCFA3458">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:54:27 UTC</createdTime>
+<generatorID>95DA51ED-9594-F450-6A09-BE0B7EB5C1B3</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="E7ABFDAE-D8B7-4802-3201-1707C5545516">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:54:27 UTC</createdTime>
+<generatorID>C9E45B23-4FF2-7B19-7570-E9647D19EE67</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="capacidad_maxima" id="0B58F4C6-82AD-60A5-4EBE-4284DE6A5CD0">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:54:27 UTC</createdTime>
+<generatorID>DD917EA7-10CD-3038-E98D-EFFDDF0AB24F</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09AA3C8E-BC0F-76AD-9CE5-B86FC556B4DD" name="RESIDENCIA_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:51:59 UTC</createdTime>
+<generatorID>A131D83D-74E5-D8D5-1390-9ECF092E973F</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FFEA3EC-79F5-60B3-0FA7-547800DFE467"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D2E70380-8C6E-8184-90E5-8B13036A0EB0" name="COMPARTIDA">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:51:59 UTC</createdTime>
+<generatorID>477565D5-B52E-F676-F54A-7F2FD72D12F3</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_residencia" id="4D9837E4-449C-689C-74D3-FC1B06DF49D5">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<generatorID>FBCFD1BD-88CA-8ABB-035C-5AF3128F97B8</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87EFB0BC-46D3-7EE5-E655-45B25590940F" referredColumn="2CC9E293-3E6A-7D65-23F1-F62042EA0E46"/>
+</associations>
+</Column>
+<Column name="id_habitacion" id="BBCE7F2B-6C30-CBED-C91D-A4E6E35964FD">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<generatorID>35080097-DB19-CAEC-0F28-3FB548754309</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87EFB0BC-46D3-7EE5-E655-45B25590940F" referredColumn="34C182B3-B70E-1F6C-2210-3E7C234E62C8"/>
+</associations>
+</Column>
+<Column name="estado" id="79A8CF7A-50E7-4845-6EFF-160FD1AFF81D">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>215048B8-34E6-1A39-6FD8-7EC2102D1489</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="560AC602-C935-D52A-0DA2-33B4DCFBA492" name="COMPARTIDA_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<generatorID>394F2CE0-17F9-DE8D-8950-DA9E4FA67CED</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D9837E4-449C-689C-74D3-FC1B06DF49D5"/>
+<colUsage columnID="BBCE7F2B-6C30-CBED-C91D-A4E6E35964FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="350B04AE-5E24-32F2-3D13-A6604A7F223F" name="COMPARTIDA_PKv1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>4C3C1F66-C9E6-E225-7FCC-41461877CF03</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79A8CF7A-50E7-4845-6EFF-160FD1AFF81D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB1AD733-19BD-DCDE-4A30-BCDD9A5F7E00" name="COMPARTIDA_HABITACION_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<generatorID>6697A23F-0626-9298-B5D2-3BF37C5DA1E9</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D9837E4-449C-689C-74D3-FC1B06DF49D5"/>
+<colUsage columnID="BBCE7F2B-6C30-CBED-C91D-A4E6E35964FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

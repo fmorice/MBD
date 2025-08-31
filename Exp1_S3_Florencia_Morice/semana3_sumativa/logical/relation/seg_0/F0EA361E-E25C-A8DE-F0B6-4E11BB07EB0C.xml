@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="registra" directorySegmentName="seg_0" id="F0EA361E-E25C-A8DE-F0B6-4E11BB07EB0C">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 17:38:57 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<sourcePk>DA5F95E5-767F-A078-2164-7F04DBE14F31</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>38DE3AD7-260C-6787-A4EC-311C35ABA1A5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8A48ADF9-EB1D-C96B-D7BE-F5856988341B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

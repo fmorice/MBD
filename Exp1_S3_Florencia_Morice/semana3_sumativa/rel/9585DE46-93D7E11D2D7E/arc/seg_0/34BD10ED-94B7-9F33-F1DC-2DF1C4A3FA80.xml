@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="34BD10ED-94B7-9F33-F1DC-2DF1C4A3FA80" name="FKArc_2">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>A42F57AE-1A05-F8B6-07EE-0DB2FA0042E0</table>
+<fkeys>
+<fkeyID>79E980B1-BF19-EA45-7033-7552739A4F19</fkeyID>
+<fkeyID>9512AB37-F013-FDE2-5442-6B28C0F509AD</fkeyID>
+</fkeys>
+</FKArc>

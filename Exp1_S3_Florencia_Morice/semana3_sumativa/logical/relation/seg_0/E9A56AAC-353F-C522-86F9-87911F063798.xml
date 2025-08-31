@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pertenecev1" directorySegmentName="seg_0" id="E9A56AAC-353F-C522-86F9-87911F063798">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:53:54 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<sourcePk>8E153786-67B2-969A-8013-B72056DA7C3B</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>70C53BD4-5111-023B-7346-A80C61CE1B0B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EE156FF3-B7F3-6DE9-49AC-C54BF88583D5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

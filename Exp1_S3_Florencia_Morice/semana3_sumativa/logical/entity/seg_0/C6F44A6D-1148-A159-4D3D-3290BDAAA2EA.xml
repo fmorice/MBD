@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C6F44A6D-1148-A159-4D3D-3290BDAAA2EA" name="HABITACION">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 16:27:27 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_residencia" id="FBCFD1BD-88CA-8ABB-035C-5AF3128F97B8">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 17:42:07 UTC</createdTime>
+<generatorID>7F59A029-26C8-EB9A-DACF-F798151F4DE1</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>5179F7EC-FC3C-A0DC-FDE4-17051DDA4ED7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_habitacion" id="35080097-DB19-CAEC-0F28-3FB548754309">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 17:43:01 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero_habitacion" id="AEFC8434-5BE8-F325-60AD-D312337BFEAC">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:47:33 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantidad_cama" id="2404ED78-6C89-8DFD-9652-3422DE5D5BD6">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:51:33 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cant_max_persona" id="76D6E6B6-AAC0-AAC4-D5A4-59FCEDCDD2FF">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:52:10 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="394F2CE0-17F9-DE8D-8950-DA9E4FA67CED" name="HABITACION PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 17:42:02 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FBCFD1BD-88CA-8ABB-035C-5AF3128F97B8</attributeRef>
+<attributeRef>35080097-DB19-CAEC-0F28-3FB548754309</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

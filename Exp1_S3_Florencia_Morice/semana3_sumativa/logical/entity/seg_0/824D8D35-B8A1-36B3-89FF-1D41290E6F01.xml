@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="824D8D35-B8A1-36B3-89FF-1D41290E6F01" name="RESIDENTE">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-29 16:27:39 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_habitacion" id="504C972E-C327-EBBD-ED2E-446FDA38F37A">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:51:01 UTC</createdTime>
+<generatorID>22671271-C17C-D41C-DB73-C1F4C0AAAE46</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>35080097-DB19-CAEC-0F28-3FB548754309</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_residente" id="A64E5BEE-7DAE-ED3A-918F-492A25074978">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:34:47 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_apoderado" id="BDCE0455-218F-DEB0-214D-29D0BE2622AB">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 03:02:52 UTC</createdTime>
+<generatorID>A2367ACA-3D1E-7059-E4DF-DB5AA958E3E0</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>62482C1B-B60C-361B-944E-7D6DB5327B95</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut" id="25E11E9F-E7C9-FB0A-1FA0-BA05CFA6FD2E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:53:15 UTC</createdTime>
+<generatorID>8A720BAA-690C-D4CB-216D-AF2688217C0B</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>C0DC53C7-F9FE-9992-4433-A096F030129A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut1" id="8D9E9483-139C-FD31-DE13-F7FE3C39284C">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:53:54 UTC</createdTime>
+<generatorID>A2367ACA-3D1E-7059-E4DF-DB5AA958E3E0</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>619C12DB-E32C-FCDF-C0BF-AE4547D76734</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_residencia" id="CEF92F8E-3BFD-F1AD-A8FB-4898AC691278">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:51:01 UTC</createdTime>
+<generatorID>22671271-C17C-D41C-DB73-C1F4C0AAAE46</generatorID>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>FBCFD1BD-88CA-8ABB-035C-5AF3128F97B8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_autonomia" id="798C3578-8A13-06B5-C71D-4309CDC1DBAF">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 04:09:48 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="63769636-A539-1AE0-F066-49700E7770A5" name="RESIDENTE PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:35:24 UTC</createdTime>
+<ownerDesignName>semana3_sumativa</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A64E5BEE-7DAE-ED3A-918F-492A25074978</attributeRef>
+<attributeRef>BDCE0455-218F-DEB0-214D-29D0BE2622AB</attributeRef>
+<attributeRef>8D9E9483-139C-FD31-DE13-F7FE3C39284C</attributeRef>
+<attributeRef>25E11E9F-E7C9-FB0A-1FA0-BA05CFA6FD2E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
