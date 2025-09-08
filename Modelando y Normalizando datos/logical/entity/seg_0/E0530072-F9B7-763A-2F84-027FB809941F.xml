@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E0530072-F9B7-763A-2F84-027FB809941F" name="POSTULANTE_EXTRANJERO">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:00:39 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>E42C2542-28E5-4B0A-865F-E289965F048A</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="postulante_id" id="5CEB277F-E3FA-6DCF-3F2E-6EC8A27BFDB3">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:00:58 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pasaporte" id="FE868356-90DA-046A-8DBA-86A5F8B72569">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:01:15 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nacionalidad" id="27E2C28E-5246-4510-E2A1-E028C612536E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:01:27 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D02CCC66-4733-825E-84A2-B2FB6944BDC4" name="POSTULANTE_EXTRANJERO PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:01:13 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5CEB277F-E3FA-6DCF-3F2E-6EC8A27BFDB3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

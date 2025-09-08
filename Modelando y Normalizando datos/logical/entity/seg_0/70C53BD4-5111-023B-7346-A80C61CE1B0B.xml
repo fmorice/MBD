@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="70C53BD4-5111-023B-7346-A80C61CE1B0B" name="POSTULACION">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:33:26 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="postulacion_id" id="C0DC53C7-F9FE-9992-4433-A096F030129A">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:40:20 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postulante_id" id="1ABA052B-F018-832C-2536-00A520522BA8">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:40:37 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="empresa_id" id="54BD8871-159E-BAAE-127C-88FD22747CEB">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:40:58 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_postulacion" id="7DC84B0D-75DB-8CC5-848E-86D7764B1E55">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:41:21 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pretension_renta" id="6176ACB7-A898-BDDD-AF3C-FC557D90285F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:41:36 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="46025C5F-C671-1E23-17AE-41B3FFAFA3EC">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:42:01 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direccion" id="BD4BE94A-C477-358F-B1DB-2BF75DEC83E3">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:09:17 UTC</createdTime>
+<generatorID>BAAD1706-45BC-4E42-6260-68BA067FC05E</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>E3E88E5B-8E8D-5318-CC52-6BBD69ADA6BE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="empresa_id1" id="4434FEA1-6D8E-18F0-7D99-3FE31D323D21">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:09:17 UTC</createdTime>
+<generatorID>BAAD1706-45BC-4E42-6260-68BA067FC05E</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>76EAFED3-6226-BF72-A0B7-20B3796E130E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8E153786-67B2-969A-8013-B72056DA7C3B" name="PERSONA PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:40:34 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C0DC53C7-F9FE-9992-4433-A096F030129A</attributeRef>
+<attributeRef>BD4BE94A-C477-358F-B1DB-2BF75DEC83E3</attributeRef>
+<attributeRef>4434FEA1-6D8E-18F0-7D99-3FE31D323D21</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="406DCE60-90E2-B0A2-6233-6A4D49F0FD34" name="ANEXO">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:51:59 UTC</createdTime>
+<generatorID>8A48ADF9-EB1D-C96B-D7BE-F5856988341B</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="fecha_inicio" id="133CF068-9375-EBF9-6C33-48EC71FE6717">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:51:59 UTC</createdTime>
+<generatorID>62DACB96-468E-B18F-59DE-F06FFFA5685B</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_termino" id="691D6035-64B8-8536-6215-1DC3925BD125">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:51:59 UTC</createdTime>
+<generatorID>C63C508F-7546-A42A-8C97-9EC374D6FC98</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTRATO_CONTRATO_ID" id="F2BE8F9A-DA2C-1719-CE07-5D65A80A4D8E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="observaciones" id="8A3C6141-A5E4-47E2-D1E4-F1DFC679140B">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>F6190F2F-A59E-FF06-DC89-96E018E4DE3A</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_contrato" id="8E42F3A0-0389-48F3-88C3-4151194A3070">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>8341FD69-BD36-0E8B-FC38-842D9A26F041</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19D38BB1-9F15-8603-8136-A0DD4CFAD677" referredColumn="76EDB717-C356-17F5-BF90-18F5D71DDABE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6DB4CC43-43A6-9422-201A-F24D3FEC490E" name="ANEXO_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>F789A0DF-BF0F-119B-BD97-70CEC5E1BA31</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E42F3A0-0389-48F3-88C3-4151194A3070"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A55FB8F4-CFDC-AC52-DED2-6C6953A29A9D" name="ANEXO_CONTRATO_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<generatorID>F0EA361E-E25C-A8DE-F0B6-4E11BB07EB0C</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E42F3A0-0389-48F3-88C3-4151194A3070"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

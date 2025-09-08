@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ABA840D4-ADE3-ADCA-24DE-C76958D57EE8" name="PROFESION">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>65751DE3-1B2C-2AB7-E3AC-215A8CC7558B</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="profesion_id" id="3DD716D3-C7F0-D55B-D941-889EB3969CB6">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>BA3AE384-C7B6-7E3D-2E14-112098CFAF27</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="postulante_id" id="57203CCE-62FB-68E6-20CD-CB31D81C6DF7">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>D97A1A8C-196D-813D-8327-B08FD23E5CAE</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_titulo" id="1F3CCA20-A466-2B1A-2E9C-CC614B1F4A1D">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>AB60A793-D898-F8F0-7DB9-7971AF7B9CF2</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_obtencion" id="65B07C93-101F-D334-C7CE-51AEC85765DD">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>60FCF55F-0EB5-4121-D21B-E1E40C3DD070</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="grado_academico" id="B78E8AE6-7CB4-F744-BE76-DAD3A7F12CE3">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>9381ADB9-1D7D-58E0-5D88-F861970A24DF</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTULANTE_postulante_id" id="53B2CD94-3805-D942-D483-1BE7D6D6478E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>777A76C9-7923-86F3-08D5-6DA3BEB29889</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A74B2DC-6BCC-0531-C418-5CB6ED1E615D" referredColumn="8BE884E0-94E2-C078-4BC0-807E76923F12"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1EA09ACD-D6DC-8FE1-CC80-A2AD33AD9615" name="PROFESION_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>91876DA2-E5D4-D38A-B269-8394E8600152</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DD716D3-C7F0-D55B-D941-889EB3969CB6"/>
+<colUsage columnID="53B2CD94-3805-D942-D483-1BE7D6D6478E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0CC513B-EFE0-5B0D-329E-9A95CDF9757F" name="PROFESION_POSTULANTE_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>C896666B-E21E-2290-F370-AD390D3C18AE</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53B2CD94-3805-D942-D483-1BE7D6D6478E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

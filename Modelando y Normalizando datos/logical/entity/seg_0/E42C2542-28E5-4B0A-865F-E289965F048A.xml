@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E42C2542-28E5-4B0A-865F-E289965F048A" name="POSTULANTE">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:03:05 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="postulante_id" id="8E0DB10E-3DC8-8BA6-247D-BA5138D6C0BB">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:03:40 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="AAC575C2-1F42-92E2-9B28-5F15C2D5AEA5">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:03:54 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido" id="9DC4EC50-9A49-7AF0-16A8-626B07637D24">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:03:58 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="residencia_chile" id="0E25BA74-5C8B-35EF-9FBF-7AE621D3B607">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:04:05 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sitio_web" id="298FC854-6313-CAD3-9840-6E72C959A264">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:04:18 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_registro" id="78A19D51-8F20-89D7-AD29-E820A8E7C364">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:04:30 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EB568623-C1D7-1CBB-A7CC-2345A2EA9A9E" name="POSTULANTE PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:03:51 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8E0DB10E-3DC8-8BA6-247D-BA5138D6C0BB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

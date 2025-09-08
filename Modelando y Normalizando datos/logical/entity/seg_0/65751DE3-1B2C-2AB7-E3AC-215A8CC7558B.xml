@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="65751DE3-1B2C-2AB7-E3AC-215A8CC7558B" name="PROFESION">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:06:11 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="profesion_id" id="BA3AE384-C7B6-7E3D-2E14-112098CFAF27">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:06:23 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postulante_id" id="D97A1A8C-196D-813D-8327-B08FD23E5CAE">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:06:37 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_titulo" id="AB60A793-D898-F8F0-7DB9-7971AF7B9CF2">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:06:51 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_obtencion" id="60FCF55F-0EB5-4121-D21B-E1E40C3DD070">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:07:04 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="grado_academico" id="9381ADB9-1D7D-58E0-5D88-F861970A24DF">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:07:26 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="postulante_id1" id="777A76C9-7923-86F3-08D5-6DA3BEB29889">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:08:04 UTC</createdTime>
+<generatorID>C896666B-E21E-2290-F370-AD390D3C18AE</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<referedAttribute>8E0DB10E-3DC8-8BA6-247D-BA5138D6C0BB</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="91876DA2-E5D4-D38A-B269-8394E8600152" name="PROFESION PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:06:35 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<engineerTo>
+<item key="9585DE46-815B-F4FB-8531-93D7E11D2D7E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BA3AE384-C7B6-7E3D-2E14-112098CFAF27</attributeRef>
+<attributeRef>777A76C9-7923-86F3-08D5-6DA3BEB29889</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

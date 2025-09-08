@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7060A743-0FE6-3D14-3F7C-040C8CABAC3D" name="EMPRESA">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>992E45A3-4557-39CF-1C52-DFE4D6CBD663</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="empresa_id" id="EB3290E5-0451-78A2-7DCD-C41F5854F66F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>76EAFED3-6226-BF72-A0B7-20B3796E130E</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sigla" id="430FD9B5-581A-C641-47E9-9F38BB145F04">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>7D478290-7CA7-CE1C-633F-341055BA4C22</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="BCEA23A7-879E-D7AC-A339-940F51B30836">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>CDF262D6-A9B4-C3B0-D43D-93308FFE20BF</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAIS_pais_id" id="CCB9BFD8-7B81-040D-6AE5-ED659F3BFA17">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>E3E88E5B-8E8D-5318-CC52-6BBD69ADA6BE</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4ABB42FB-4303-3FB1-E703-29A3EB9C6746" referredColumn="019418B7-2656-39F9-3E19-12DEE2DC57B2"/>
+</associations>
+</Column>
+<Column name="pais_id" id="53680FAE-0E9A-D7D8-1CD5-B2ABF1F44D2F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>57B643F0-8123-0594-D506-C51FEC312B3B</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="remuneracion_max" id="851AECCF-6E96-EFA7-3B31-57B4FF84DAAE">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>38DD1923-8E4B-5B0C-F441-447A6B13A4D5</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ADBC6856-DDA9-DEAC-16C3-12B604522579" name="EMPRESA_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>ED8D0BBD-8968-AB8A-5281-FACE39B21319</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCB9BFD8-7B81-040D-6AE5-ED659F3BFA17"/>
+<colUsage columnID="EB3290E5-0451-78A2-7DCD-C41F5854F66F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D38C0F7-BEA0-E5D1-6ADC-6F04652C0F76" name="EMPRESA_PAIS_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>44B30907-0847-0C27-357C-B0BA9F19EA81</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCB9BFD8-7B81-040D-6AE5-ED659F3BFA17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

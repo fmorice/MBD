@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="24D24949-46DF-9A4B-D908-C8A56D9956AD" name="POSTULANTE">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>E42C2542-28E5-4B0A-865F-E289965F048A</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="postulante_id" id="8BE884E0-94E2-C078-4BC0-807E76923F12">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>8E0DB10E-3DC8-8BA6-247D-BA5138D6C0BB</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="C2E64DDC-29D8-A701-02E8-0AD5327A106E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>AAC575C2-1F42-92E2-9B28-5F15C2D5AEA5</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellido" id="B3AEE2A3-F6F5-1936-3E86-D129C9376728">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>9DC4EC50-9A49-7AF0-16A8-626B07637D24</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="residencia_chile" id="1C86B910-1133-2EBF-2D65-20F766704CC2">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>0E25BA74-5C8B-35EF-9FBF-7AE621D3B607</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sitio_web" id="5771D806-659D-6CF5-5D98-C582BE971F91">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>298FC854-6313-CAD3-9840-6E72C959A264</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_registro" id="B46059EA-79D7-688B-ED86-069F6569761D">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>78A19D51-8F20-89D7-AD29-E820A8E7C364</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="65A19C06-63AF-788F-3F2A-5D5C58C2C82B" name="POSTULANTE_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>EB568623-C1D7-1CBB-A7CC-2345A2EA9A9E</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8BE884E0-94E2-C078-4BC0-807E76923F12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

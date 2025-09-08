@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D89F0759-3B72-BBB0-E9AA-6485896C6700" name="POSTULANTE_CHILENO">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>824D8D35-B8A1-36B3-89FF-1D41290E6F01</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="postulante_id" id="53EF7B79-091D-E348-FBF8-698824828004">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>8E0DB10E-3DC8-8BA6-247D-BA5138D6C0BB</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FEDBA1AC-3D73-22D9-AC0F-F93A9EDC03A3" referredColumn="8BE884E0-94E2-C078-4BC0-807E76923F12"/>
+</associations>
+</Column>
+<Column name="postulante_id1" id="5A680A85-83FE-CCFF-5346-76EF16070B06">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>A64E5BEE-7DAE-ED3A-918F-492A25074978</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rut" id="824C3034-0E2E-BDF7-4108-19F3A2577BFF">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>798C3578-8A13-06B5-C71D-4309CDC1DBAF</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dv" id="C687D095-CDE3-A2E1-8AA1-1A5FF12B8785">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>9A3BC9DE-E60B-CDCF-55EF-2B13EF8778A6</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FAD6AF8E-6618-5487-CD1B-06EB474DA1B8" name="POSTULANTE_CHILENO_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>EB568623-C1D7-1CBB-A7CC-2345A2EA9A9E</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53EF7B79-091D-E348-FBF8-698824828004"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7850B21A-6E27-69D5-170F-1C71E4DA447E" name="POSTULANTE_CHILENO_PKv1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>63769636-A539-1AE0-F066-49700E7770A5</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A680A85-83FE-CCFF-5346-76EF16070B06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A19E0E4A-2D8A-0377-F5C9-793929CC50A0" name="POSTULANTE_CHILENO_POSTULANTE_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>2587BE60-42E8-8C31-77BE-6010CD3ABEE6</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53EF7B79-091D-E348-FBF8-698824828004"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

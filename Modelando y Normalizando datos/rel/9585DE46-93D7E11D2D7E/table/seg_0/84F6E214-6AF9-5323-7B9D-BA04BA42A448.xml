@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="84F6E214-6AF9-5323-7B9D-BA04BA42A448" name="POSTULACION_EXTRANJERA">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>EE156FF3-B7F3-6DE9-49AC-C54BF88583D5</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="postulacion_id_1" id="5F7270FF-6520-9796-D5D7-4909C53C9729">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>62482C1B-B60C-361B-944E-7D6DB5327B95</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nivel_idioma" id="C962E5CA-9407-F5E1-6EE2-EB7D13A6A439">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>0DD2068E-B284-B6E0-71C3-4C41F21FD0C1</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_visa" id="99FDBFFB-3E59-684E-998A-66D5C3B546FE">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>F1680FDE-13FD-7A85-8B9F-F2F40A398A4C</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTULACION_postulacion_id" id="A3CCD51A-5F14-4320-3147-C9DD8628E8D2">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>3B779381-3692-1D36-2FFA-78089669230C</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC8179B8-132E-B5B2-2858-706A70395ED4" referredColumn="066562C3-2795-D0EF-4262-0C372A58481F"/>
+</associations>
+</Column>
+<Column name="POSTULACION_EMPRESA_PAIS_pais_id" id="3092D28F-648C-9EDE-03F0-34FAD8FF1676">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>29388A1C-DA67-BA09-CAE8-58F44D04E8DF</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC8179B8-132E-B5B2-2858-706A70395ED4" referredColumn="B54005A5-8B13-B660-CBA9-7D9EB8323264"/>
+</associations>
+</Column>
+<Column name="POSTULACION_EMPRESA_empresa_id" id="A29BD6E6-F6A4-A64F-476B-9F4F841C1E3F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>1D364ED9-7412-4450-CF45-B87597AC8831</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC8179B8-132E-B5B2-2858-706A70395ED4" referredColumn="FB28C598-43B7-98C5-4296-B1DCAD0A9197"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E248C27C-857D-688C-6E85-E79F7CB276A0" name="POSTULACION_EXTRANJERA_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>C7F20F07-16D2-B4CD-5B9D-AD6394F946C2</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F7270FF-6520-9796-D5D7-4909C53C9729"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD213027-E027-A107-84E2-99483EF8EE10" name="POSTULACION_EXTRANJERA__IDX">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>2AA0339A-3804-7A34-3AFE-8CBC43B7D677</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A3CCD51A-5F14-4320-3147-C9DD8628E8D2"/>
+<colUsage columnID="3092D28F-648C-9EDE-03F0-34FAD8FF1676"/>
+<colUsage columnID="A29BD6E6-F6A4-A64F-476B-9F4F841C1E3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1EB57B22-D335-2171-485F-3DFE4D0A4290" name="POSTULACION_EXTRANJERA_POSTULACION_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>2AA0339A-3804-7A34-3AFE-8CBC43B7D677</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3CCD51A-5F14-4320-3147-C9DD8628E8D2"/>
+<colUsage columnID="3092D28F-648C-9EDE-03F0-34FAD8FF1676"/>
+<colUsage columnID="A29BD6E6-F6A4-A64F-476B-9F4F841C1E3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

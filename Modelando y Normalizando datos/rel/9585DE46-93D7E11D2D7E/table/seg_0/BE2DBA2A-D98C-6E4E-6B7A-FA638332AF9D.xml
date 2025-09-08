@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE2DBA2A-D98C-6E4E-6B7A-FA638332AF9D" name="POSTULANTE_EXTRANJERO">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>E0530072-F9B7-763A-2F84-027FB809941F</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="postulante_id" id="85B3EB3A-F7D8-F967-705E-54EA066CE7E1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>8E0DB10E-3DC8-8BA6-247D-BA5138D6C0BB</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9969B0C3-D5FD-1CF9-A0D3-3BCF19270664" referredColumn="8BE884E0-94E2-C078-4BC0-807E76923F12"/>
+</associations>
+</Column>
+<Column name="postulante_id1" id="53FF8DED-C2C5-F44C-471D-4C0F43045FBF">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>5CEB277F-E3FA-6DCF-3F2E-6EC8A27BFDB3</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pasaporte" id="99A6369B-0485-8635-58E5-D5C9DF41F80D">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>FE868356-90DA-046A-8DBA-86A5F8B72569</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nacionalidad" id="E155D9BB-3FBC-3013-53DC-C31E3ED5AB41">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>27E2C28E-5246-4510-E2A1-E028C612536E</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="800DFF90-AF0A-58FF-0EE4-3CD7DE31DD66" name="POSTULANTE_EXTRANJERO_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>EB568623-C1D7-1CBB-A7CC-2345A2EA9A9E</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85B3EB3A-F7D8-F967-705E-54EA066CE7E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="525F7AF3-6129-9984-0684-0B686EBB46B1" name="POSTULANTE_EXTRANJERO_PKv1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>D02CCC66-4733-825E-84A2-B2FB6944BDC4</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53FF8DED-C2C5-F44C-471D-4C0F43045FBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C631F7B-09B0-FBE1-99E0-6703D24F28BD" name="POSTULANTE_EXTRANJERO_POSTULANTE_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>15D70489-407B-78CF-9E54-2B7147D3820A</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85B3EB3A-F7D8-F967-705E-54EA066CE7E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

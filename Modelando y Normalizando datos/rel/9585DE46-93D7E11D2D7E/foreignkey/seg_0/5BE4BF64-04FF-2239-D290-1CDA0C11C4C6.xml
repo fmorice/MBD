@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5BE4BF64-04FF-2239-D290-1CDA0C11C4C6" containerWithKeyObject="B2D6DC6C-4CD1-8ECD-F7A0-537511F648CE" localFKIndex="CCBD6310-E9D6-1EA2-6A49-018E34A5119D" name="POSTULACION_EMPRESA_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>BAAD1706-45BC-4E42-6260-68BA067FC05E</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<referredTableLongName>EMPRESA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7060A743-0FE6-3D14-3F7C-040C8CABAC3D</referredTableID>
+<keyObject>ADBC6856-DDA9-DEAC-16C3-12B604522579</keyObject>
+<referredKeyID>ADBC6856-DDA9-DEAC-16C3-12B604522579</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PAIS_pais_id,empresa_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

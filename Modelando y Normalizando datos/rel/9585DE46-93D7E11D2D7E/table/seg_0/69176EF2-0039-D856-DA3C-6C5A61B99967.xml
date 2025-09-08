@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="69176EF2-0039-D856-DA3C-6C5A61B99967" name="CONTRATO">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:51:59 UTC</createdTime>
+<generatorID>38DE3AD7-260C-6787-A4EC-311C35ABA1A5</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CONTRATO_ID" id="00F0956F-5991-C29B-509D-077099FE54C9">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="APODERADO_APODERADO_ID" id="A755FCB3-7EB0-4280-1AB5-4E0BA3FE0A3A">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_apoderado" id="A85C37F7-98F4-FFAF-3BB9-B0EFC43ED7B0">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>FD8DE2C1-E194-61B4-E1D6-9A4B3B9FDDBD</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_contrato" id="76EDB717-C356-17F5-BF90-18F5D71DDABE">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>5E4E3F48-8FEC-F6B6-456C-35496A520913</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APODERADO_PERSONA_rut" id="EE7E2210-B87C-E110-8C7E-2A9D86D1BCBF">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:54:27 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4CEDE04A-D080-EB3E-6C9F-945FCEEADD2C" name="CONTRATO_id_contrato_UN">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<generatorID>DA5F95E5-767F-A078-2164-7F04DBE14F31</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76EDB717-C356-17F5-BF90-18F5D71DDABE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="60DCAD73-4767-6D6D-1DC8-B859476FDA8B" name="CONTRATO_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="00F0956F-5991-C29B-509D-077099FE54C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3704BCE0-12C6-C6F2-70E5-A8C73C8C2CC4" name="CONTRATO__IDX">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 01:52:00 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>51DBCAB1-497E-1A86-593B-F36FC65DA330</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A755FCB3-7EB0-4280-1AB5-4E0BA3FE0A3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB7F59F1-AAA4-E3A1-4550-4CB41BBB71D2" name="CONTRATO__IDXv1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-30 02:49:50 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>51DBCAB1-497E-1A86-593B-F36FC65DA330</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A85C37F7-98F4-FFAF-3BB9-B0EFC43ED7B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F62D898F-A714-1C4F-7077-D53BD9ED2A36" name="CONTRATO__IDX">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-31 03:54:27 UTC</createdTime>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>51DBCAB1-497E-1A86-593B-F36FC65DA330</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A85C37F7-98F4-FFAF-3BB9-B0EFC43ED7B0"/>
+<colUsage columnID="EE7E2210-B87C-E110-8C7E-2A9D86D1BCBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

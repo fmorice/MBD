@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9969B0C3-D5FD-1CF9-A0D3-3BCF19270664" containerWithKeyObject="BE2DBA2A-D98C-6E4E-6B7A-FA638332AF9D" localFKIndex="5C631F7B-09B0-FBE1-99E0-6703D24F28BD" name="POSTULANTE_EXTRANJERO_POSTULANTE_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-08 15:11:09 UTC</createdTime>
+<generatorID>15D70489-407B-78CF-9E54-2B7147D3820A</generatorID>
+<ownerDesignName>Modelando y Normalizando datos</ownerDesignName>
+<referredTableLongName>POSTULANTE</referredTableLongName>
+<arc>1F2D7EAC-03F4-B3F5-9636-0EAABEADD778</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>24D24949-46DF-9A4B-D908-C8A56D9956AD</referredTableID>
+<keyObject>65A19C06-63AF-788F-3F2A-5D5C58C2C82B</keyObject>
+<referredKeyID>65A19C06-63AF-788F-3F2A-5D5C58C2C82B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>postulante_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
