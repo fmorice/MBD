@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TableProxyOraclev9i" name="Tratamiento" directorySegmentName="seg_0" id="7C5331D6-335A-BDCB-C0C6-530307FA09DC">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="fecha_fin" id="00C80A46-799A-994A-A517-62D107293001">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fecha_inicio" id="15C91228-B028-64CB-6415-4DEBB3FD9581">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_cita" id="21BF0642-B765-8AD8-0F6A-F3F7A509F54A">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_tratamiento" id="686D7F8E-F078-559B-F564-6A95097B561E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="descripcion" id="C1C4F7C4-BA33-E47C-766A-AF7EB94BE327">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.FKProxyOraclev9i" name="fk_tratamiento_cita" id="EEA628F1-4E42-43BC-B6E3-D939BC1A46D4">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.PKProxyOraclev9i" name="Tratamiento_PK" id="5E8D7444-97E2-A5CB-C5AB-6C22992B72E6">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev9i>

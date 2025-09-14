@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="CentroMedicoSanRafael_Domains">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="318F0E1A-CF04-B06E-2CCF-2FDA1EC3C042">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>CentroMedicoSanRafael_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_100" id="338810A6-4CFA-DEAA-CD1F-A6E63D746B4D">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>100</dataTypeSize>
+<fileName>CentroMedicoSanRafael_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_12" id="3AFE42C0-F3A9-2BEF-B0ED-5CBC7B634C47">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>12</dataTypeSize>
+<fileName>CentroMedicoSanRafael_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_50" id="5AB02A6D-120A-7C9A-FFBE-0AFFD8F7C22C">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>50</dataTypeSize>
+<fileName>CentroMedicoSanRafael_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_12_2_0" id="5F8A91D0-6F3E-6916-B41B-96847D97B312">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>CentroMedicoSanRafael_Domains</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_150" id="722A98D8-57CD-6285-9707-5CB68B076E9F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>150</dataTypeSize>
+<fileName>CentroMedicoSanRafael_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_20" id="7647A31E-98DD-7E8D-A89E-3107CF4027E1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20</dataTypeSize>
+<fileName>CentroMedicoSanRafael_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_200" id="A4EE90D9-8E1A-C30A-2DEB-7CE5CC6EE1C0">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>200</dataTypeSize>
+<fileName>CentroMedicoSanRafael_Domains</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Date_0_0_0" id="BF56CF40-7330-6E5D-0DDB-7325835F05C3">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<avTSortOrder>0</avTSortOrder>
+<fileName>CentroMedicoSanRafael_Domains</fileName>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

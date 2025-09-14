@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="40911776-8862-032C-90A2-DA47A97A2D7A" name="Factura">
+<sourceDDLFile>CentroMedicoSanRafael.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<importedID>D0D1B143-DD9D-E96F-12E1-E179E5FBA388</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_factura" id="81656B39-FA63-989A-CE15-25D0C7775FAA">
+<sourceDDLFile>CentroMedicoSanRafael.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<importedID>67D68C48-C024-A4C7-6221-4345D674D0BC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>318F0E1A-CF04-B06E-2CCF-2FDA1EC3C042</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="5644A8E5-EE42-D2A8-8BEE-41F0968534E9">
+<sourceDDLFile>CentroMedicoSanRafael.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<importedID>9578894F-68A1-89FF-FE38-05A9DF8B12AA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>BF56CF40-7330-6E5D-0DDB-7325835F05C3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto_total" id="94E06E09-FBE6-AD25-9DAF-BFDF4402AF54">
+<sourceDDLFile>CentroMedicoSanRafael.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<importedID>6579501F-F41F-8D03-7779-520F7E6C8DA5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5F8A91D0-6F3E-6916-B41B-96847D97B312</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cita" id="416CE8D0-A578-520A-0FAC-AB9854EFAF8C">
+<sourceDDLFile>CentroMedicoSanRafael.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<importedID>7DC43075-87CD-717C-9CFF-146F40997E0A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>318F0E1A-CF04-B06E-2CCF-2FDA1EC3C042</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4057857E-3329-EB8E-8B56-CA76DD902E15" referredColumn="483BD3BD-5C7E-7579-A220-EF95F76EA6EB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="06053058-D797-50A5-1194-524A069A78AE" name="Factura_PK">
+<sourceDDLFile>CentroMedicoSanRafael.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<importedID>FDAA9505-D80E-EBEE-5B01-00EC39880139</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81656B39-FA63-989A-CE15-25D0C7775FAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FABF1B70-848C-5E76-CB4C-FD18979ED26D" name="fk_factura_cita">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="416CE8D0-A578-520A-0FAC-AB9854EFAF8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

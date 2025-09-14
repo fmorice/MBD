@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7C5331D6-335A-BDCB-C0C6-530307FA09DC" name="Tratamiento">
+<sourceDDLFile>CentroMedicoSanRafael.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<importedID>AD905BB1-D0D5-7E98-C326-C930FBCCD95E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tratamiento" id="686D7F8E-F078-559B-F564-6A95097B561E">
+<sourceDDLFile>CentroMedicoSanRafael.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<importedID>5D666448-798A-A94E-EA45-68B3358ED9B8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>318F0E1A-CF04-B06E-2CCF-2FDA1EC3C042</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="C1C4F7C4-BA33-E47C-766A-AF7EB94BE327">
+<sourceDDLFile>CentroMedicoSanRafael.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<importedID>60FB7904-8FB4-A380-2A2D-29AF96A6C14F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A4EE90D9-8E1A-C30A-2DEB-7CE5CC6EE1C0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_inicio" id="15C91228-B028-64CB-6415-4DEBB3FD9581">
+<sourceDDLFile>CentroMedicoSanRafael.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<importedID>2866A1B6-7528-75DD-0D1E-0DD3AA07A37E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>BF56CF40-7330-6E5D-0DDB-7325835F05C3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_fin" id="00C80A46-799A-994A-A517-62D107293001">
+<sourceDDLFile>CentroMedicoSanRafael.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<importedID>F3B26D17-BA64-842C-0AA9-E9ECB0F14492</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>BF56CF40-7330-6E5D-0DDB-7325835F05C3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_cita" id="21BF0642-B765-8AD8-0F6A-F3F7A509F54A">
+<sourceDDLFile>CentroMedicoSanRafael.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<importedID>E6435969-202E-2923-DCE5-B1C0A751BDC9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>318F0E1A-CF04-B06E-2CCF-2FDA1EC3C042</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="03E971E1-DCCE-89C2-2712-9F7125C3634E" referredColumn="483BD3BD-5C7E-7579-A220-EF95F76EA6EB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E8D7444-97E2-A5CB-C5AB-6C22992B72E6" name="Tratamiento_PK">
+<sourceDDLFile>CentroMedicoSanRafael.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<importedID>5F45CC24-6D28-7DFD-9FBE-DC6AE3767BA5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="686D7F8E-F078-559B-F564-6A95097B561E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EEA628F1-4E42-43BC-B6E3-D939BC1A46D4" name="fk_tratamiento_cita">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:54 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21BF0642-B765-8AD8-0F6A-F3F7A509F54A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

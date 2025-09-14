@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="s5vv" id="666B2F8F-A5FE-CF98-74D0-9E278A85859B" version="3.5">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:37:59 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>666B2F8F-A5FE-CF98-74D0-9E278A85859B</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="75D7B49D-25C8-5792-36AE-D13531659E59">
+<designStoragePath>C:\CentroMedicoSanRafael</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

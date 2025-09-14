@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StorageDesignOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.StorageDesignOraclev9i" name="Oracle9i" id="43566195-F15A-2AAC-6490-ECCAE2ECDC99" siteID="9807C1FA-0550-772D-1F14-16B19CA63681" siteName="Oracle9i" siteType="7">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:43 UTC</createdTime>
+<ownerDesignName>Sin título_2</ownerDesignName>
+</StorageDesignOraclev9i>

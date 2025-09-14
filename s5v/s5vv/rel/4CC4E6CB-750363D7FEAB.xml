@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="4CC4E6CB-2807-EFAB-DD88-750363D7FEAB" mainViewID="746C7565-42D8-BAB6-9172-6E39A92C5835">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 23:38:00 UTC</createdTime>
+<ownerDesignName>s5vv</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>9807C1FA-0550-772D-1F14-16B19CA63681</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>CentroMedicoSanRafael.sql</fileName>
+<pathName>C:\Users\Raul\OneDrive\Documentos\GitHub\MBD\s5v</pathName>
+<dbType>7</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>
