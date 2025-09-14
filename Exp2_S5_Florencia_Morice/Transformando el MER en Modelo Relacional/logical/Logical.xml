@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="400EF328-48F3-E44C-40C3-293DFF5F153C" mainViewID="BD625A0E-4E06-EE64-A633-515E85E8E09F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 19:11:57 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StructuredType class="oracle.dbtools.crest.model.design.datatypes.StructuredType" name="SDO_GEOMETRY" directorySegmentName="seg_0" id="47E390DE-0671-C4B1-8428-0F45CBEE18F8">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 19:11:58 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<visible>false</visible>
+<predefined>true</predefined>
+<final>false</final>
+<instantiable>true</instantiable>
+</StructuredType>

@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3A2C7481-2849-C781-C6F1-EE8ECB24872B" name="REGION">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 19:45:05 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="5DDE8104-6BA0-05ED-C214-DCA2D4E9C854" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="B20E365B-801E-7F62-BF4A-46B2F7FD510C">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 19:46:20 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="5DDE8104-6BA0-05ED-C214-DCA2D4E9C854" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="85755F15-87B5-0C4A-8117-695220F396BE">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 19:47:19 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="5DDE8104-6BA0-05ED-C214-DCA2D4E9C854" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="832098D2-B99D-27B5-1278-E4855750DC1F" name="REGION PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 19:47:14 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="5DDE8104-6BA0-05ED-C214-DCA2D4E9C854" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B20E365B-801E-7F62-BF4A-46B2F7FD510C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

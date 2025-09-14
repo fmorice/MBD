@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1E9F707F-2481-0543-C7C7-E78391260785" name="ATENCION">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 20:13:55 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="5DDE8104-6BA0-05ED-C214-DCA2D4E9C854" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="78C3CAC9-FD54-2C8C-E0C2-814C7CDCAD63">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 20:14:03 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="5DDE8104-6BA0-05ED-C214-DCA2D4E9C854" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="875FF45D-27E0-DCA8-2760-84B744BFC775">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 20:14:24 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="5DDE8104-6BA0-05ED-C214-DCA2D4E9C854" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_hora" id="715CF438-B084-BCA0-6794-8AD91BE21B4E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 20:14:51 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="5DDE8104-6BA0-05ED-C214-DCA2D4E9C854" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="9C7ED40E-1840-F32E-F577-F7EC4D88B447">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 20:16:35 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="5DDE8104-6BA0-05ED-C214-DCA2D4E9C854" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="diagnostico" id="CBABF966-3620-FE11-947C-018A84E0C3C4">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 20:17:35 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="5DDE8104-6BA0-05ED-C214-DCA2D4E9C854" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="monto_pagado" id="0AE8418D-A340-9C5A-80BD-369C214D1CDD">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 20:17:55 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="5DDE8104-6BA0-05ED-C214-DCA2D4E9C854" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="805951BB-A1F8-5C00-E8E5-2A0D82B71AF5" name="ATENCION PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 20:14:23 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="5DDE8104-6BA0-05ED-C214-DCA2D4E9C854" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>78C3CAC9-FD54-2C8C-E0C2-814C7CDCAD63</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
