@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D52B884F-A143-BE95-46BB-5A3FE5DB20D4" name="SOLICITUD_EXAMEN">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>4F6C5573-ED6E-94B0-F50E-1751D56C6716</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_examen" id="B055B3E3-0815-7532-527F-7541A392AD2A">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>693C04EA-98CA-D55C-FFBB-AA1DF5602785</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATENCION_id" id="DE93BA11-1637-D09A-4000-BA6633353A32">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>8C94CA51-3813-CB43-BAA6-1A6E63822D83</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6BC9DBBB-653E-DD91-5B0A-F758E42018A1" referredColumn="D879ADF4-1BA1-1904-4258-A04AE0438354"/>
+</associations>
+</Column>
+<Column name="EXAMEN_LABORATORIO_codigo" id="838929E0-41A8-60FB-E9A1-1D748F88ED2F">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>2DA5B3B1-F572-50B3-4D95-7AD7EB222165</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F1808E93-7939-19EB-6C70-EDD0758EC358</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6FD777FC-19EB-E777-3D06-0F60DADABAE5" referredColumn="1B16426D-DE1A-A100-D7B7-1E3E14BB569A"/>
+</associations>
+</Column>
+<Column name="fecha_solicitud" id="A9949F3B-CDFA-0461-E13C-68AD05AC5824">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>F110267C-680D-E355-1F8C-FAFF08F5C5CA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>285A1A49-E26E-AF3E-7AAC-2F1D0A244346</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_resultado" id="8B5D0398-6794-D9C1-7702-3643AD1E1407">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>B62D7DA5-9EB7-EF02-8A1E-291934A3EAD2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>285A1A49-E26E-AF3E-7AAC-2F1D0A244346</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resultado" id="232201C4-9EA0-ED54-51CF-9E53886167DD">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>FF609939-88AF-135C-152C-27E77659A634</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>F6B243F6-2B08-D9E5-A449-772BD4C9CFDD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="11C55181-FBE6-F90A-AC8E-93FC5EAB97B6" name="SOLICITUD_EXAMEN_PK">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>8D4ED46B-F174-0257-F7CE-876A6E12C2DC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B055B3E3-0815-7532-527F-7541A392AD2A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2BCBE3C-B550-B4B0-4CDD-B2CC2D1DEEF1" name="idx_solicitud_atencion">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>4D9A4AA0-6F25-60B6-D6D0-6EC5270108C1</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE93BA11-1637-D09A-4000-BA6633353A32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8E86957-492E-5715-BA38-BF71E89D3E8B" name="idx_solicitud_examen">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>B67EF920-89B1-B084-1110-C726445E0128</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="838929E0-41A8-60FB-E9A1-1D748F88ED2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB6F8D0E-3688-DDCB-FB8E-67DA7584BBC0" name="SOLICITUD_EXAMEN_ATENCION_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE93BA11-1637-D09A-4000-BA6633353A32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BACDC80C-A802-BD60-3A78-7D851491B051" name="SOLICITUD_EXAMEN_EXAMEN_LABORATORIO_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="838929E0-41A8-60FB-E9A1-1D748F88ED2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

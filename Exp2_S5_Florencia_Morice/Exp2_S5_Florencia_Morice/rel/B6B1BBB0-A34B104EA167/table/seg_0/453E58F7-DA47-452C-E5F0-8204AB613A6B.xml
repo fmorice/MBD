@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="453E58F7-DA47-452C-E5F0-8204AB613A6B" name="COMUNA">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>8CEA57B5-9487-AE74-5D84-B242617C7B15</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_comuna" id="9D0CE2D5-2203-BAD9-56D9-5A012F03EF18">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>A1AED555-5777-FD64-694C-23BB0C2C4B46</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="60158E4A-8E5E-1A9D-8DFD-1BBF99909A7F">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>969ED8BE-4BBD-BB22-CE74-128384C9E949</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F3FD9916-B6BD-2112-6B92-3B8A5D49B282</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_id" id="EC6FE68A-590D-2886-2AD5-7BFBF6CBD8CD">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>7ADA32CA-E1DD-47C0-DF2E-30F2B08FD626</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F2CB6F6D-0EFE-0950-3933-577D991675AE" referredColumn="C570C076-4B66-A96A-DCFB-E56F78549228"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F700577-6D8B-B24D-0A22-1835014389FC" name="COMUNA_PK">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>13DC1017-F1B9-9998-D80C-702B2157F931</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D0CE2D5-2203-BAD9-56D9-5A012F03EF18"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="742FEDBB-7ED4-26D3-5C13-4F0451E44DB3" name="COMUNA_REGION_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC6FE68A-590D-2886-2AD5-7BFBF6CBD8CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

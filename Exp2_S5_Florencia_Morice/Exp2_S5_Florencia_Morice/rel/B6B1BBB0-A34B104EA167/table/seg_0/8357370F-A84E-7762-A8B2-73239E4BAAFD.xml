@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8357370F-A84E-7762-A8B2-73239E4BAAFD" name="EXAMEN_LABORATORIO">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>29ED3CA8-5653-9D41-01C5-FFFC320EFD81</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="1B16426D-DE1A-A100-D7B7-1E3E14BB569A">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>C53A9A14-84DE-243F-1ACE-AF5275ACF8A9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F1808E93-7939-19EB-6C70-EDD0758EC358</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="23D8B61E-4160-16CA-6AA5-52EFBF4D243B">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>49D7795C-FE7B-54D7-B389-90F562662B1C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C0DE7E55-572E-84CC-4255-1E1702055EEF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_muestra" id="DE0E578D-7FB2-3670-B886-C2DB9A7F4765">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>629D06AA-6FB1-D751-92D1-0DAC26C9E9EB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F3FD9916-B6BD-2112-6B92-3B8A5D49B282</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="condiciones_preparacion" id="39FD14A8-9440-FB4C-3DA1-F7E471279E8B">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>1C07532C-085A-712C-8718-5BD94E279937</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FE8C5F5C-F9F5-8137-AD52-FB51D30010CE</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7429EFF4-EF2E-5E9F-00BF-1B96BB11D545" name="EXAMEN_LABORATORIO_PK">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>E539A469-9CFE-BAB1-0EE7-E15B6BCF8D47</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B16426D-DE1A-A100-D7B7-1E3E14BB569A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

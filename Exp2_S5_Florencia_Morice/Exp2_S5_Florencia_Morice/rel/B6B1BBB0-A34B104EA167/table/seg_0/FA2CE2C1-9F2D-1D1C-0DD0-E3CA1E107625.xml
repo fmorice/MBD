@@ -1,0 +1,193 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FA2CE2C1-9F2D-1D1C-0DD0-E3CA1E107625" name="MEDICO">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>62D4872A-7ED8-23B3-4F26-3EE51B57AAE1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rut" id="E7341F62-DFD2-A904-A06A-B597F7BE2AD9">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>8A4945F4-15C3-FF10-3AA3-BA7F5AA98B8A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>63961BB3-94DD-2F4E-4CED-61894A0F568F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_completo" id="A470A1F5-8F9C-E4E4-9325-22A9A521DD83">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>380A537E-BA6B-7AE5-877B-24AEDDAF4A2B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C0DE7E55-572E-84CC-4255-1E1702055EEF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_ingreso" id="31121BE4-9E77-1BC1-519E-049F1BC702C9">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>9FFC66E3-52E5-DFA4-6C37-6750AE7442C7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>285A1A49-E26E-AF3E-7AAC-2F1D0A244346</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESPECIALIDAD_id" id="EE75FE2B-5529-85E1-F4FB-F950D9CC8010">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>EFE66770-9026-8D26-F7F6-CE340EE768F0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DA48293-7EB8-3393-78C9-D3646480CD92" referredColumn="1ECD6591-3482-AA89-9F31-97637C4253E2"/>
+</associations>
+</Column>
+<Column name="afp_id" id="5FDE7ECB-0148-A6DF-2618-4513606E9AF6">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>C16E7AA0-3FA0-2B59-5C1E-048DAF9D637C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSTITUCION_SALUD_id" id="76D19F00-4591-DBEA-B473-777D16BFF460">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>4702F8C3-B1DE-7699-B6D3-E43BD72524EF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DEEE6C47-337C-792E-2B37-CB9CCF0AFBFE" referredColumn="8DCFEFE1-DD0B-20E2-1225-F724129383C2"/>
+</associations>
+</Column>
+<Column name="MEDICO_rut" id="48569342-7C72-57FC-19C8-17AC36C80CCB">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>C16EB3A7-5122-8446-AFA9-FBFCECF3C9B4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>63961BB3-94DD-2F4E-4CED-61894A0F568F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6DA4989A-9774-9394-6373-AEFA70B3EEFF" referredColumn="E7341F62-DFD2-A904-A06A-B597F7BE2AD9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC87DC9D-67A4-360A-8B3D-E93C68D1A22D" name="MEDICO_PK">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>CB04F31C-9BEE-9F71-AE94-229A9B8EB6D4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7341F62-DFD2-A904-A06A-B597F7BE2AD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1079E95B-397E-D81B-EDEB-9958A350137B" name="idx_medico_especialidad">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>E333BF6E-8659-48F8-39F1-1225B233EDBB</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE75FE2B-5529-85E1-F4FB-F950D9CC8010"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FF4E87C-444D-7765-A925-B8E457006930" name="idx_medico_afp">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>F4C32B10-6C40-1ACC-F1B2-02D3B464EC54</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FDE7ECB-0148-A6DF-2618-4513606E9AF6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5106D96-EF83-BDFF-8A5F-84724C1BEF9B" name="idx_medico_institucion">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<importedID>83DA5135-C112-AD23-3FB7-579262EE4975</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76D19F00-4591-DBEA-B473-777D16BFF460"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="826A4944-BA78-7A30-4BCF-13CBCA781E67" name="MEDICO_AFP_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="670EF678-6AB8-1A3D-08CE-6B1F7783A8DE" name="MEDICO_ESPECIALIDAD_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE75FE2B-5529-85E1-F4FB-F950D9CC8010"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87AA1D17-8508-B888-7D13-AF17CC0E796E" name="MEDICO_INSTITUCION_SALUD_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76D19F00-4591-DBEA-B473-777D16BFF460"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F6B3D42-EF6F-FFD6-FF70-B77D5BBE96A1" name="MEDICO_MEDICO_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48569342-7C72-57FC-19C8-17AC36C80CCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

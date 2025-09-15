@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="ass" id="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" mainViewID="E678EAE7-C45A-F080-098C-242E149530DC">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:03 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>9807C1FA-0550-772D-1F14-16B19CA63681</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>ass.sql</fileName>
+<pathName>C:\Users\Raul\OneDrive\Documentos\GitHub\MBD\s5v2</pathName>
+<dbType>7</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

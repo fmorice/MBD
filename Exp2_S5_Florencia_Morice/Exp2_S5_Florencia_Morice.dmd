@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Exp2_S5_Florencia_Morice" id="7AD2E8DF-FAD3-3458-C7BA-3FF52A9B99F2" version="3.5">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:06:21 UTC</createdTime>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>7AD2E8DF-FAD3-3458-C7BA-3FF52A9B99F2</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="9DEDB67E-BB44-7AD1-1912-7746D32E90AA">
+<designStoragePath>C:\ass</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

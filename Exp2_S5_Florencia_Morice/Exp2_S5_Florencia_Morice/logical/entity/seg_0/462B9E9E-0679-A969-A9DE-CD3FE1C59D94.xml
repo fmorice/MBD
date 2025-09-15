@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="462B9E9E-0679-A969-A9DE-CD3FE1C59D94" name="ATENCION">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:58 UTC</createdTime>
+<generatorID>DD05C076-14C4-F743-CE94-C0A5D85E53AE</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_atencion" id="0FA8711E-38D9-2E20-17FB-93C97B835EB6">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:58 UTC</createdTime>
+<generatorID>D879ADF4-1BA1-1904-4258-A04AE0438354</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_hora" id="6813D9D9-01A8-382C-A6AE-77A923D7012E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:58 UTC</createdTime>
+<generatorID>7190ECA5-3DA8-53B0-5D83-D43843100A60</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>B3A50C6C-7A66-55B7-FB2D-968117040A91</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_atencion" id="12E72B6B-C409-8684-DCAE-D1C2B314252E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>EF94F8E7-3F3D-173B-3C4F-57AECE5E901B</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>44097539-C9F6-F7CA-E035-272CDF55AF28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="paciente rut" id="2907F5CD-A5BB-20D7-06C8-75792C5B8C7C">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>E970E3A5-ED55-57E0-0AC3-8768F11F88DB</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<referedAttribute>0282FFFE-B08E-B3F0-3A09-B4512CF42B08</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>63961BB3-94DD-2F4E-4CED-61894A0F568F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="medico rut" id="A6D4FFAD-AD85-6078-B02C-C97EC645E0A5">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>0D09A3FB-13F2-003B-966F-7DF02CF65D1A</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<referedAttribute>C917EEE2-B064-7662-86BC-8AD88E5A9ACE</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>63961BB3-94DD-2F4E-4CED-61894A0F568F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="diagnostico" id="7FC20847-E2A0-96EF-F83E-A9B2A0E3CD07">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>584B5701-2234-304A-589F-DA7EAFFBC4EE</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>F6B243F6-2B08-D9E5-A449-772BD4C9CFDD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="monto_pagado" id="055F0CC6-991E-7894-4728-C350DE341C48">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>5EDCF5F2-CD0A-B064-2E30-C72802CF567B</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B75E9CAF-5E79-422D-F764-1CACE67A28B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3D686D5E-1BBC-1850-3B7B-A4ADDBD680FA" name="ATENCION PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>80047B4F-6475-CBE0-71F2-EFC4B512EAF9</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0FA8711E-38D9-2E20-17FB-93C97B835EB6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

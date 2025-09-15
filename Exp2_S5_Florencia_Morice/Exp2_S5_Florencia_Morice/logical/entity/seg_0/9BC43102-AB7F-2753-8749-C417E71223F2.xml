@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9BC43102-AB7F-2753-8749-C417E71223F2" name="AFP">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:58 UTC</createdTime>
+<generatorID>5760F35D-A986-619B-BF6C-CA5D903C68FC</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_afp" id="0008C386-645E-5B5A-852E-830917E2CAC3">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:58 UTC</createdTime>
+<generatorID>006F7248-D437-742F-C54F-F9221DD11931</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="6C744575-095B-574C-E811-A083DDF40351">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:58 UTC</createdTime>
+<generatorID>BF7BD88C-19A2-A388-1EAE-921F710EA9E3</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="C2F43B52-EF73-808C-2F1D-77FE3071958B">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:58 UTC</createdTime>
+<generatorID>8676ADB4-938D-3528-C418-D046ACB95707</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="824FEF5A-2788-865B-C3B1-768B37E0F5A1" name="AFP PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:58 UTC</createdTime>
+<generatorID>64690463-567D-DA2C-5EE2-5DB256B2FC5C</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+<identifier id="E5949249-CF0D-AB40-B4AD-F4D992AFAAE3" name="uk afp codigo">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:58 UTC</createdTime>
+<generatorID>253D2EBB-3303-B851-194F-FF97E02E898A</generatorID>
+<ownerDesignName>Exp2_S5_Florencia_Morice</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+</identifier>
+</identifiers>
+</Entity>
