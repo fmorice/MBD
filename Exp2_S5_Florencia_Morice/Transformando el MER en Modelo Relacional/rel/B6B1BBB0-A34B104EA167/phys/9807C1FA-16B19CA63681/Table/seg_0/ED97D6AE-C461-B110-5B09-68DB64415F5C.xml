@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TableProxyOraclev9i" name="PAGO" directorySegmentName="seg_0" id="ED97D6AE-C461-B110-5B09-68DB64415F5C">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="fecha_pago" id="266F506D-BBC0-27F5-0A32-BF277778A74F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tipo_pago" id="5D64016B-5545-AC0B-7486-36F6686C0ED2">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="monto" id="5FA430DB-7459-494F-2084-3F9FBBBFACEC">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_pago" id="6BEDE939-DAE2-DC1F-4009-807E27CD51D4">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ATENCION_id" id="EB1838D2-32CA-D1A1-1F35-CF9522C4045E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.FKProxyOraclev9i" name="PAGO_ATENCION_FK" id="F1FF5716-D45F-2EF6-4E58-D0719A6A9E26">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.PKProxyOraclev9i" name="PAGO_PK" id="2A21A94A-6EF6-49DC-D3CF-227F8BAD32D1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="ck_pago_tipo" id="FD732052-54AB-754C-0664-B807B806C251">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.UniqueOraclev9i" name="PAGO_atencion_id_UN" id="D3110E4A-3120-0535-7CC9-0E98927CBF1D">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev9i>

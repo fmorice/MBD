@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_solicitud_examen" directorySegmentName="seg_0" id="458BE291-F2AE-26DE-4530-6020996077F5">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>6FD777FC-19EB-E777-3D06-0F60DADABAE5</generatorID>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<sourcePk>E5E424BE-05B0-62FB-D9D9-DA4E4CD2FB9C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A07A6FF1-F5B7-D682-FC74-8A0CCE27AF2C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F13FFAC5-D8BE-0916-C490-2E826B0AC792</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A16B6441-BFBC-FB70-417D-634623DA5DC1" name="INSTITUCION_SALUD">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>FAF39E21-54BE-27F2-A198-19634113CB39</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo" id="8DCFEFE1-DD0B-20E2-1225-F724129383C2">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>AB5FA8DB-2247-FAB7-6193-86CB95D4DE11</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo" id="456352B8-BAC8-1D51-3E93-50E566DCBFF4">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>7008B5A1-2BF9-DEC5-EDAF-D870D2DEA28B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F1808E93-7939-19EB-6C70-EDD0758EC358</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="E03A207D-7A16-1592-8DA2-348E32A51C7B">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>A720131B-3125-7FB2-D297-05B12DD64880</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C0DE7E55-572E-84CC-4255-1E1702055EEF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="3CAD6C46-00F5-9939-4714-3F0D3195947C">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>99752B25-0218-CF63-6240-BC56F223A9CE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F1808E93-7939-19EB-6C70-EDD0758EC358</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="610827B0-9ECA-A7F0-EF26-F3229675FBF2" name="INSTITUCION_SALUD_PK">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>87037283-0786-2DA7-5B5F-F45F5ECFC356</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DCFEFE1-DD0B-20E2-1225-F724129383C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5EFFFB10-D66F-8661-F6CF-49A4F5E32365" name="INSTITUCION_SALUD_codigo_UN">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>E340B660-C714-1B51-1637-52B8F539CBF5</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="456352B8-BAC8-1D51-3E93-50E566DCBFF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_institucion_tipo" directorySegmentName="seg_0" id="12252843-524A-3993-80FB-F7F4C4F84278">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>A349D7DF-29A9-D188-6A4B-C8FA9A97909A</importedID>
+<rule><![CDATA[tipo IN ('Fonasa', 'Isapre')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

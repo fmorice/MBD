@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TableProxyOraclev9i" name="INSTITUCION_SALUD" directorySegmentName="seg_0" id="A16B6441-BFBC-FB70-417D-634623DA5DC1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="tipo" id="3CAD6C46-00F5-9939-4714-3F0D3195947C">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="codigo" id="456352B8-BAC8-1D51-3E93-50E566DCBFF4">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_tipo" id="8DCFEFE1-DD0B-20E2-1225-F724129383C2">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nombre" id="E03A207D-7A16-1592-8DA2-348E32A51C7B">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.PKProxyOraclev9i" name="INSTITUCION_SALUD_PK" id="610827B0-9ECA-A7F0-EF26-F3229675FBF2">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="ck_institucion_tipo" id="12252843-524A-3993-80FB-F7F4C4F84278">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.UniqueOraclev9i" name="INSTITUCION_SALUD_codigo_UN" id="5EFFFB10-D66F-8661-F6CF-49A4F5E32365">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev9i>

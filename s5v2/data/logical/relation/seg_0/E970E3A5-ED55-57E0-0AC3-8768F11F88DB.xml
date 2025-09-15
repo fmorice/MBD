@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_atencion_paciente" directorySegmentName="seg_0" id="E970E3A5-ED55-57E0-0AC3-8768F11F88DB">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>5520B90E-1E6D-325A-F466-D425854F6788</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<sourcePk>AFED93B7-8A85-5779-3A3E-2DE50027A97C</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1B611731-C463-BA94-2159-95878F3A737E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>462B9E9E-0679-A969-A9DE-CD3FE1C59D94</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4FD26CDD-1674-E81D-61EB-F36BB5FC65B9" name="INSTITUCION SALUD">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>A16B6441-BFBC-FB70-417D-634623DA5DC1</generatorID>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tipo" id="E49FD863-9555-9495-908B-0F6F7A61CF24">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>8DCFEFE1-DD0B-20E2-1225-F724129383C2</generatorID>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigo" id="71981DB1-C287-1EF8-9B5D-C05D85F56804">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>456352B8-BAC8-1D51-3E93-50E566DCBFF4</generatorID>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F1808E93-7939-19EB-6C70-EDD0758EC358</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="561D2807-9B26-EC64-7BD0-9D453BC5E787">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>E03A207D-7A16-1592-8DA2-348E32A51C7B</generatorID>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C0DE7E55-572E-84CC-4255-1E1702055EEF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="61B3CCFB-35E0-F21C-2E50-13FCE033D508">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>3CAD6C46-00F5-9939-4714-3F0D3195947C</generatorID>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F1808E93-7939-19EB-6C70-EDD0758EC358</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C0EB50FF-CBD5-03ED-33D8-61136CD4653B" name="INSTITUCION SALUD PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>610827B0-9ECA-A7F0-EF26-F3229675FBF2</generatorID>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E49FD863-9555-9495-908B-0F6F7A61CF24</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BB72ADD6-7101-80C1-E5F9-1927C757DD63" name="uk institucion codigo">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>5EFFFB10-D66F-8661-F6CF-49A4F5E32365</generatorID>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>71981DB1-C287-1EF8-9B5D-C05D85F56804</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

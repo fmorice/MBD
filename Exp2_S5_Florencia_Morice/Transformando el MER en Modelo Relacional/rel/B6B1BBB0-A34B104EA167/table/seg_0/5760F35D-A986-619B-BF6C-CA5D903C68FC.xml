@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5760F35D-A986-619B-BF6C-CA5D903C68FC" name="AFP">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>584451EF-766F-CD8A-122E-6398711E8643</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_afp" id="006F7248-D437-742F-C54F-F9221DD11931">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>01D16E1F-356F-A3A7-C582-7AB444755E44</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo" id="BF7BD88C-19A2-A388-1EAE-921F710EA9E3">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>24CCA6B1-8D34-02A3-8EB2-553AE6333811</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="8676ADB4-938D-3528-C418-D046ACB95707">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>F404434F-7778-3EBB-B47B-59303DFABD2F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C0DE7E55-572E-84CC-4255-1E1702055EEF</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="64690463-567D-DA2C-5EE2-5DB256B2FC5C" name="AFP_PK">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>FB1F97B6-4814-8603-4B94-889D9FC5BE70</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="253D2EBB-3303-B851-194F-FF97E02E898A" name="AFP_codigo_UN">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>CC8B6608-3411-9C05-44FB-6BE4E657A53D</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TableProxyOraclev9i" name="COMUNA" directorySegmentName="seg_0" id="453E58F7-DA47-452C-E5F0-8204AB613A6B">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nombre" id="60158E4A-8E5E-1A9D-8DFD-1BBF99909A7F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id" id="9D0CE2D5-2203-BAD9-56D9-5A012F03EF18">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="region_id" id="EC6FE68A-590D-2886-2AD5-7BFBF6CBD8CD">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.FKProxyOraclev9i" name="fk_comuna_region" id="742FEDBB-7ED4-26D3-5C13-4F0451E44DB3">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.PKProxyOraclev9i" name="COMUNA_PK" id="5F700577-6D8B-B24D-0A22-1835014389FC">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev9i>

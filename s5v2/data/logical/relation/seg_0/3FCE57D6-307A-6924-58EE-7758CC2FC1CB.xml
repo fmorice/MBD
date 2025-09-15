@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_medico_institucion" directorySegmentName="seg_0" id="3FCE57D6-307A-6924-58EE-7758CC2FC1CB">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>DEEE6C47-337C-792E-2B37-CB9CCF0AFBFE</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<sourcePk>C0EB50FF-CBD5-03ED-33D8-61136CD4653B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4FD26CDD-1674-E81D-61EB-F36BB5FC65B9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A50CBEC1-E775-4E81-73B9-1D36F368BD87</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

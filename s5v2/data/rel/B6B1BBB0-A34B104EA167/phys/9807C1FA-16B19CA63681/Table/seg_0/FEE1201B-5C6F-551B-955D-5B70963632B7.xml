@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TableProxyOraclev9i" name="ESPECIALIDAD" directorySegmentName="seg_0" id="FEE1201B-5C6F-551B-955D-5B70963632B7">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id" id="1ECD6591-3482-AA89-9F31-97637C4253E2">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nombre" id="3E42F098-BE15-DBDB-D81B-3DE89174D45F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="descripcion" id="B5E4843E-60BF-DE0C-6B89-2E7F793522F6">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.PKProxyOraclev9i" name="ESPECIALIDAD_PK" id="1F5EF7E2-4E0F-454B-922D-D7D5EED9E836">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.UniqueOraclev9i" name="uk_especialidad_nombre" id="9DE8C312-B330-A91E-1C3B-888E85C1B8F0">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev9i>

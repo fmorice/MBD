@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Design version="3.3.0.747" tool="Oracle SQL Developer Data Modeler">
+  <LogicalModel name="CentroMedicoSanRafael">
+    <Entities>
+      <Entity name="Paciente">
+        <Attributes>
+          <Attribute name="RUT" type="VARCHAR2(12)" mandatory="true" identifier="true"/>
+          <Attribute name="NombreCompleto" type="VARCHAR2(100)" mandatory="true"/>
+          <Attribute name="Sexo" type="VARCHAR2(10)" mandatory="true"/>
+          <Attribute name="FechaNacimiento" type="DATE" mandatory="true"/>
+          <Attribute name="Direccion" type="VARCHAR2(150)" mandatory="true"/>
+        </Attributes>
+      </Entity>
+      <Entity name="Region">
+        <Attributes>
+          <Attribute name="CodigoRegion" type="NUMBER" mandatory="true" identifier="true"/>
+          <Attribute name="Nombre" type="VARCHAR2(100)" mandatory="true"/>
+        </Attributes>
+      </Entity>
+      <Entity name="Comuna">
+        <Attributes>
+          <Attribute name="CodigoComuna" type="NUMBER" mandatory="true" identifier="true"/>
+          <Attribute name="Nombre" type="VARCHAR2(100)" mandatory="true"/>
+        </Attributes>
+      </Entity>
+      <Entity name="Medico">
+        <Attributes>
+          <Attribute name="RUT" type="VARCHAR2(12)" mandatory="true" identifier="true"/>
+          <Attribute name="NombreCompleto" type="VARCHAR2(100)" mandatory="true"/>
+          <Attribute name="FechaIngreso" type="DATE" mandatory="true"/>
+        </Attributes>
+      </Entity>
+      <Entity name="Especialidad">
+        <Attributes>
+          <Attribute name="CodigoEspecialidad" type="NUMBER" mandatory="true" identifier="true"/>
+          <Attribute name="Nombre" type="VARCHAR2(100)" mandatory="true"/>
+        </Attributes>
+      </Entity>
+      <Entity name="AFP">
+        <Attributes>
+          <Attribute name="CodigoAFP" type="NUMBER" mandatory="true" identifier="true"/>
+          <Attribute name="Nombre" type="VARCHAR2(100)" mandatory="true"/>
+        </Attributes>
+      </Entity>
+      <Entity name="InstitucionSalud">
+        <Attributes>
+          <Attribute name="CodigoSalud" type="NUMBER" mandatory="true" identifier="true"/>
+          <Attribute name="Nombre" type="VARCHAR2(100)" mandatory="true"/>
+        </Attributes>
+      </Entity>
+      <Entity name="Atencion">
+        <Attributes>
+          <Attribute name="CodigoAtencion" type="NUMBER" mandatory="true" identifier="true"/>
+          <Attribute name="Fecha" type="DATE" mandatory="true"/>
+          <Attribute name="Tipo" type="VARCHAR2(20)" mandatory="true"/>
+          <Attribute name="Diagnostico" type="VARCHAR2(255)" mandatory="false"/>
+        </Attributes>
+      </Entity>
+      <Entity name="Pago">
+        <Attributes>
+          <Attribute name="CodigoPago" type="NUMBER" mandatory="true" identifier="true"/>
+          <Attribute name="Monto" type="NUMBER(10,2)" mandatory="true"/>
+          <Attribute name="TipoPago" type="VARCHAR2(20)" mandatory="true"/>
+        </Attributes>
+      </Entity>
+      <Entity name="Examen">
+        <Attributes>
+          <Attribute name="CodigoExamen" type="NUMBER" mandatory="true" identifier="true"/>
+          <Attribute name="Nombre" type="VARCHAR2(100)" mandatory="true"/>
+          <Attribute name="TipoMuestra" type="VARCHAR2(50)" mandatory="true"/>
+          <Attribute name="Condiciones" type="VARCHAR2(150)" mandatory="false"/>
+        </Attributes>
+      </Entity>
+    </Entities>
+    <Relations>
+      <Relation name="Paciente_Comuna" from="Paciente" to="Comuna"/>
+      <Relation name="Comuna_Region" from="Comuna" to="Region"/>
+      <Relation name="Medico_Especialidad" from="Medico" to="Especialidad"/>
+      <Relation name="Medico_AFP" from="Medico" to="AFP"/>
+      <Relation name="Medico_InstitucionSalud" from="Medico" to="InstitucionSalud"/>
+      <Relation name="Atencion_Paciente" from="Atencion" to="Paciente"/>
+      <Relation name="Atencion_Medico" from="Atencion" to="Medico"/>
+      <Relation name="Atencion_Pago" from="Atencion" to="Pago"/>
+      <Relation name="Atencion_Examen" from="Atencion" to="Examen"/>
+    </Relations>
+  </LogicalModel>
+</Design>

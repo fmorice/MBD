@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="99F43A92-822D-546C-5D8A-238443CCD671">
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="868F74F5-8E69-ED6A-49D2-6F9F9911690E">
 <createdBy>Raul</createdBy>
-<createdTime>2025-09-14 19:11:58 UTC</createdTime>
+<createdTime>2025-09-15 00:06:22 UTC</createdTime>
 <ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
 <shouldBeOpen>false</shouldBeOpen>
 </BusinessInfoDesign>

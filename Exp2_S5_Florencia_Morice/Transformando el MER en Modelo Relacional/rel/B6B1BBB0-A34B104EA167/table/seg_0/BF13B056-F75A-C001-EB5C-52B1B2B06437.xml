@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF13B056-F75A-C001-EB5C-52B1B2B06437" name="REGION">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>429B182D-046A-457D-F0E3-69E09C59487D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_region" id="C570C076-4B66-A96A-DCFB-E56F78549228">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>205A46E5-0767-A327-6EC0-591CBEF81F87</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="9EEB5620-2C98-9615-3AF1-C743A56D12EA">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>CB67857C-B8B1-A165-BCE2-8F34FEF18B14</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>F3FD9916-B6BD-2112-6B92-3B8A5D49B282</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D8454CCE-6491-3DD5-F5AF-339B22B4A60F" name="REGION_PK">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>82841165-1F6F-F666-ABE6-340C6892C753</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C570C076-4B66-A96A-DCFB-E56F78549228"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

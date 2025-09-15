@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED97D6AE-C461-B110-5B09-68DB64415F5C" name="PAGO">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>84667AF4-2AE7-C6EC-6272-B5AB9CA44437</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pago" id="6BEDE939-DAE2-DC1F-4009-807E27CD51D4">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>2513CDED-1416-5613-D16C-ECAA0B30DFF0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ATENCION_id" id="EB1838D2-32CA-D1A1-1F35-CF9522C4045E">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>210F36C5-966B-D6C8-E4AD-8C6A43680BC9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F895464-5250-909B-2732-07DBE77D7AA3" referredColumn="D879ADF4-1BA1-1904-4258-A04AE0438354"/>
+</associations>
+</Column>
+<Column name="monto" id="5FA430DB-7459-494F-2084-3F9FBBBFACEC">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>CFFE6884-7AF8-EDCC-088D-5CA647BCDDF2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B75E9CAF-5E79-422D-F764-1CACE67A28B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_pago" id="5D64016B-5545-AC0B-7486-36F6686C0ED2">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>CE068DA5-91E0-B2B9-00B8-667A1C9CCE14</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>44097539-C9F6-F7CA-E035-272CDF55AF28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_pago" id="266F506D-BBC0-27F5-0A32-BF277778A74F">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>589E6ED1-11A7-3AD2-F5DA-81DF4012B96C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>B3A50C6C-7A66-55B7-FB2D-968117040A91</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2A21A94A-6EF6-49DC-D3CF-227F8BAD32D1" name="PAGO_PK">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>37D19910-8211-EE90-ACAE-A20B1B57CDCF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BEDE939-DAE2-DC1F-4009-807E27CD51D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3110E4A-3120-0535-7CC9-0E98927CBF1D" name="PAGO_atencion_id_UN">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>E9C051C1-0745-C860-00DF-6F1C33831E40</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB1838D2-32CA-D1A1-1F35-CF9522C4045E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1FF5716-D45F-2EF6-4E58-D0719A6A9E26" name="PAGO_ATENCION_FK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB1838D2-32CA-D1A1-1F35-CF9522C4045E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_pago_tipo" directorySegmentName="seg_0" id="FD732052-54AB-754C-0664-B807B806C251">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<importedID>E7842C89-39DF-B544-BD7F-C5D5DBEF137A</importedID>
+<rule><![CDATA[tipo_pago IN ('efectivo', 'tarjeta', 'convenio')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

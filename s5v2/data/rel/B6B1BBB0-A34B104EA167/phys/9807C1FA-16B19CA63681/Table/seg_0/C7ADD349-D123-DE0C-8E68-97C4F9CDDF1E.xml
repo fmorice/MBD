@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev9i class="oracle.dbtools.crest.model.design.storage.oracle.v9i.TableProxyOraclev9i" name="PACIENTE" directorySegmentName="seg_0" id="C7ADD349-D123-DE0C-8E68-97C4F9CDDF1E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="comuna_id" id="2C4F61BC-2D46-9A66-F607-34235E9E91AA">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tipo_usuario" id="44D8D438-5659-0C1F-7ADB-0E43BE5DFAA5">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="sexo" id="7534E274-D334-D0BD-10F9-F4D386299D38">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="rut" id="9E05719E-2BC4-CA27-56FC-95B99B4CAC38">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fecha_nacimiento" id="9F56D813-18C0-EB56-DAED-CFE5CD4A5A1E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nombre_completo" id="B0760572-9583-58B8-B1D5-619449818BFC">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="direccion" id="DFA89C22-BF52-8C8B-D389-42A5957EB15A">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v9i.IndexProxyOraclev9i" name="idx_paciente_comuna" id="B2009E30-DFFF-B4AF-2CBC-20B9EBDD1726">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.FKProxyOraclev9i" name="fk_paciente_comuna" id="0277B155-69FB-42B4-5A7A-78598B0FA8B1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v9i.PKProxyOraclev9i" name="PACIENTE_PK" id="08F103D3-B46D-3042-DC84-402075E5FFBB">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="ck_paciente_sexo" id="22B2A104-6233-28C7-424D-98CCFF18C319">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+<TableCheckConstraint name="ck_paciente_tipo" id="A51C7D5F-B942-CA6A-689C-47521560CA91">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<nameChanged>true</nameChanged>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev9i>

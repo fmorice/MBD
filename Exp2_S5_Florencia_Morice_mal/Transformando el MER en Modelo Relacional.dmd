@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Transformando el MER en Modelo Relacional" id="9AE2BDA9-4413-B9D2-3449-2FC597D7D314" version="3.5">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-14 19:11:57 UTC</createdTime>
+<ownerDesignName>Transformando el MER en Modelo Relacional</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9AE2BDA9-4413-B9D2-3449-2FC597D7D314</designId>
+</OSDM_Design>

@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<DataModeler>
+  <Design name="CentroMedicoSanRafael" type="Relational">
+    <RelationalModel name="CentroMedicoSanRafael">
+      <Table name="REGION">
+        <Column name="ID_REGION" type="NUMBER" nullable="false"/>
+        <Column name="NOMBRE" type="VARCHAR2(100)" nullable="false"/>
+        <PrimaryKey name="PK_REGION">
+          <KeyColumn name="ID_REGION"/>
+        </PrimaryKey>
+      </Table>
+      <Table name="COMUNA">
+        <Column name="ID_COMUNA" type="NUMBER" nullable="false"/>
+        <Column name="NOMBRE" type="VARCHAR2(100)" nullable="false"/>
+        <Column name="ID_REGION" type="NUMBER" nullable="false"/>
+        <PrimaryKey name="PK_COMUNA">
+          <KeyColumn name="ID_COMUNA"/>
+        </PrimaryKey>
+        <ForeignKey name="FK_COMUNA_REGION" references="REGION">
+          <Reference local="ID_REGION" foreign="ID_REGION"/>
+        </ForeignKey>
+      </Table>
+      <Table name="PACIENTE">
+        <Column name="RUT" type="VARCHAR2(12)" nullable="false"/>
+        <Column name="NOMBRE_COMPLETO" type="VARCHAR2(150)" nullable="false"/>
+        <Column name="SEXO" type="CHAR(1)" nullable="false"/>
+        <Column name="FECHA_NAC" type="DATE" nullable="false"/>
+        <Column name="DIRECCION" type="VARCHAR2(200)"/>
+        <Column name="ID_COMUNA" type="NUMBER" nullable="false"/>
+        <Column name="TIPO_USUARIO" type="VARCHAR2(20)" nullable="false"/>
+        <PrimaryKey name="PK_PACIENTE">
+          <KeyColumn name="RUT"/>
+        </PrimaryKey>
+        <ForeignKey name="FK_PACIENTE_COMUNA" references="COMUNA">
+          <Reference local="ID_COMUNA" foreign="ID_COMUNA"/>
+        </ForeignKey>
+      </Table>
+      <Table name="AFP">
+        <Column name="COD_AFP" type="VARCHAR2(10)" nullable="false"/>
+        <Column name="NOMBRE" type="VARCHAR2(100)" nullable="false"/>
+        <PrimaryKey name="PK_AFP">
+          <KeyColumn name="COD_AFP"/>
+        </PrimaryKey>
+      </Table>
+      <Table name="SALUD">
+        <Column name="COD_SALUD" type="VARCHAR2(10)" nullable="false"/>
+        <Column name="NOMBRE" type="VARCHAR2(100)" nullable="false"/>
+        <PrimaryKey name="PK_SALUD">
+          <KeyColumn name="COD_SALUD"/>
+        </PrimaryKey>
+      </Table>
+      <Table name="ESPECIALIDAD">
+        <Column name="ID_ESP" type="NUMBER" nullable="false"/>
+        <Column name="NOMBRE" type="VARCHAR2(100)" nullable="false"/>
+        <PrimaryKey name="PK_ESPECIALIDAD">
+          <KeyColumn name="ID_ESP"/>
+        </PrimaryKey>
+      </Table>
+      <Table name="MEDICO">
+        <Column name="RUT" type="VARCHAR2(12)" nullable="false"/>
+        <Column name="NOMBRE_COMPLETO" type="VARCHAR2(150)" nullable="false"/>
+        <Column name="FECHA_INGRESO" type="DATE" nullable="false"/>
+        <Column name="ID_ESP" type="NUMBER" nullable="false"/>
+        <Column name="COD_AFP" type="VARCHAR2(10)" nullable="false"/>
+        <Column name="COD_SALUD" type="VARCHAR2(10)" nullable="false"/>
+        <Column name="SUPERVISOR_RUT" type="VARCHAR2(12)"/>
+        <PrimaryKey name="PK_MEDICO">
+          <KeyColumn name="RUT"/>
+        </PrimaryKey>
+        <ForeignKey name="FK_MEDICO_ESP" references="ESPECIALIDAD">
+          <Reference local="ID_ESP" foreign="ID_ESP"/>
+        </ForeignKey>
+        <ForeignKey name="FK_MEDICO_AFP" references="AFP">
+          <Reference local="COD_AFP" foreign="COD_AFP"/>
+        </ForeignKey>
+        <ForeignKey name="FK_MEDICO_SALUD" references="SALUD">
+          <Reference local="COD_SALUD" foreign="COD_SALUD"/>
+        </ForeignKey>
+        <ForeignKey name="FK_MEDICO_SUP" references="MEDICO">
+          <Reference local="SUPERVISOR_RUT" foreign="RUT"/>
+        </ForeignKey>
+      </Table>
+      <Table name="ATENCION">
+        <Column name="ID_ATENCION" type="NUMBER" nullable="false"/>
+        <Column name="FECHA" type="DATE" nullable="false"/>
+        <Column name="TIPO" type="VARCHAR2(20)" nullable="false"/>
+        <Column name="DIAGNOSTICO" type="VARCHAR2(500)"/>
+        <Column name="RUT_PACIENTE" type="VARCHAR2(12)" nullable="false"/>
+        <Column name="RUT_MEDICO" type="VARCHAR2(12)" nullable="false"/>
+        <PrimaryKey name="PK_ATENCION">
+          <KeyColumn name="ID_ATENCION"/>
+        </PrimaryKey>
+        <ForeignKey name="FK_ATENCION_PAC" references="PACIENTE">
+          <Reference local="RUT_PACIENTE" foreign="RUT"/>
+        </ForeignKey>
+        <ForeignKey name="FK_ATENCION_MED" references="MEDICO">
+          <Reference local="RUT_MEDICO" foreign="RUT"/>
+        </ForeignKey>
+      </Table>
+      <Table name="PAGO">
+        <Column name="ID_PAGO" type="NUMBER" nullable="false"/>
+        <Column name="MONTO" type="NUMBER(12,2)" nullable="false"/>
+        <Column name="TIPO_PAGO" type="VARCHAR2(20)" nullable="false"/>
+        <Column name="ID_ATENCION" type="NUMBER" nullable="false"/>
+        <PrimaryKey name="PK_PAGO">
+          <KeyColumn name="ID_PAGO"/>
+        </PrimaryKey>
+        <ForeignKey name="FK_PAGO_ATENCION" references="ATENCION">
+          <Reference local="ID_ATENCION" foreign="ID_ATENCION"/>
+        </ForeignKey>
+      </Table>
+      <Table name="EXAMEN">
+        <Column name="COD_EXAMEN" type="VARCHAR2(10)" nullable="false"/>
+        <Column name="NOMBRE" type="VARCHAR2(100)" nullable="false"/>
+        <Column name="TIPO_MUESTRA" type="VARCHAR2(50)"/>
+        <Column name="CONDICIONES_PREP" type="VARCHAR2(200)"/>
+        <PrimaryKey name="PK_EXAMEN">
+          <KeyColumn name="COD_EXAMEN"/>
+        </PrimaryKey>
+      </Table>
+      <Table name="SOLICITUD_EXAMEN">
+        <Column name="ID_SOLICITUD" type="NUMBER" nullable="false"/>
+        <Column name="ID_ATENCION" type="NUMBER" nullable="false"/>
+        <Column name="COD_EXAMEN" type="VARCHAR2(10)" nullable="false"/>
+        <Column name="RESULTADO" type="VARCHAR2(500)"/>
+        <Column name="FECHA_RESULTADO" type="DATE"/>
+        <PrimaryKey name="PK_SOLICITUD_EXAMEN">
+          <KeyColumn name="ID_SOLICITUD"/>
+        </PrimaryKey>
+        <ForeignKey name="FK_SOL_ATENCION" references="ATENCION">
+          <Reference local="ID_ATENCION" foreign="ID_ATENCION"/>
+        </ForeignKey>
+        <ForeignKey name="FK_SOL_EXAMEN" references="EXAMEN">
+          <Reference local="COD_EXAMEN" foreign="COD_EXAMEN"/>
+        </ForeignKey>
+      </Table>
+    </RelationalModel>
+  </Design>
+</DataModeler>

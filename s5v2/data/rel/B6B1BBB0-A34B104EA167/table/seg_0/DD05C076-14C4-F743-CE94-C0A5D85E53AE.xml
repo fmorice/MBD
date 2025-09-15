@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD05C076-14C4-F743-CE94-C0A5D85E53AE" name="ATENCION">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<importedID>56D24A8C-ED80-4649-5D06-A8B38BC0F806</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="D879ADF4-1BA1-1904-4258-A04AE0438354">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<importedID>CC74B532-5926-988C-0F00-045933ED084A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>2B8178FC-EC69-8EDA-9E70-BCEB0EBF65D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_hora" id="7190ECA5-3DA8-53B0-5D83-D43843100A60">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<importedID>C3CD8A46-8A32-9DEF-40D1-1B742A4FC176</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>B3A50C6C-7A66-55B7-FB2D-968117040A91</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_atencion" id="EF94F8E7-3F3D-173B-3C4F-57AECE5E901B">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<importedID>34DA0584-6888-7A99-80AD-CC7A967E521E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>44097539-C9F6-F7CA-E035-272CDF55AF28</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="paciente_rut" id="450B88A9-2E48-D158-7656-F68B80C1266A">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<importedID>DBA76B8F-484F-5E53-7559-DD575AED6F5E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>63961BB3-94DD-2F4E-4CED-61894A0F568F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5520B90E-1E6D-325A-F466-D425854F6788" referredColumn="9E05719E-2BC4-CA27-56FC-95B99B4CAC38"/>
+</associations>
+</Column>
+<Column name="medico_rut" id="A40B7728-DF7D-B6E5-FFF4-CBBDAB066BAA">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<importedID>A185F484-03B4-22ED-AEED-446062A4D086</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>63961BB3-94DD-2F4E-4CED-61894A0F568F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="889F3CA1-A110-B445-D668-5F3028642FD0" referredColumn="E7341F62-DFD2-A904-A06A-B597F7BE2AD9"/>
+</associations>
+</Column>
+<Column name="diagnostico" id="584B5701-2234-304A-589F-DA7EAFFBC4EE">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<importedID>C4A8AF04-588A-1991-4A7A-90B92C46C8BB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>F6B243F6-2B08-D9E5-A449-772BD4C9CFDD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="monto_pagado" id="5EDCF5F2-CD0A-B064-2E30-C72802CF567B">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<importedID>AC375AA2-5D78-BB64-977A-BC1053582EEB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B75E9CAF-5E79-422D-F764-1CACE67A28B7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="80047B4F-6475-CBE0-71F2-EFC4B512EAF9" name="ATENCION_PK">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<importedID>8B333F49-D77B-F5E5-1932-9115E0709722</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D879ADF4-1BA1-1904-4258-A04AE0438354"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CBFD2C21-768F-C0CA-2F11-D707E397ADE1" name="idx_atencion_paciente">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<importedID>7ADED2E8-691E-9047-417E-EAE0BB0C4476</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="450B88A9-2E48-D158-7656-F68B80C1266A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45801D1F-DE65-2D45-83EC-B5EC795229A9" name="idx_atencion_medico">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<importedID>D88E8DED-9F17-48E9-38D4-66375081B113</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A40B7728-DF7D-B6E5-FFF4-CBBDAB066BAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0A1EFA7-4FE7-8236-438B-CFE336070DCB" name="fk_atencion_medico">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A40B7728-DF7D-B6E5-FFF4-CBBDAB066BAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5CCB0B80-889F-A53E-BA8A-83576C4DEF74" name="fk_atencion_paciente">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="450B88A9-2E48-D158-7656-F68B80C1266A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_atencion_tipo" directorySegmentName="seg_0" id="5BCB3584-A5ED-71A6-8603-7C684045CB54">
+<sourceDDLFile>ass.sql</sourceDDLFile>
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:36 UTC</createdTime>
+<ownerDesignName>data</ownerDesignName>
+<importedID>C3781287-2323-7AC9-F13D-9A45F016093C</importedID>
+<rule><![CDATA[tipo_atencion IN ('general', 'urgencia', 'preventiva')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

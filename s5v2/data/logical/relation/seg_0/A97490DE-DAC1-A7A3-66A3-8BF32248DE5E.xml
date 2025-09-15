@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_pago_atencion" directorySegmentName="seg_0" id="A97490DE-DAC1-A7A3-66A3-8BF32248DE5E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-09-15 00:10:59 UTC</createdTime>
+<generatorID>0F895464-5250-909B-2732-07DBE77D7AA3</generatorID>
+<ownerDesignName>data</ownerDesignName>
+<engineerTo>
+<item key="4DB221B8-BDC1-CC58-F8A8-4508EAD37A41" value="true"/>
+<item key="B6B1BBB0-50F8-5399-E1AA-A34B104EA167" value="true"/>
+</engineerTo>
+<sourcePk>3D686D5E-1BBC-1850-3B7B-A4ADDBD680FA</sourcePk>
+<dominantRole>462B9E9E-0679-A969-A9DE-CD3FE1C59D94</dominantRole>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>462B9E9E-0679-A969-A9DE-CD3FE1C59D94</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>5EB845B5-63FF-DE20-09ED-CE0CF81487E8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
