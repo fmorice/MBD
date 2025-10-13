@@ -1,0 +1,419 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang3082{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Segoe UI Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang10 Aqu\'ed tienes el script SQL completo:\par
+\par
+sql\par
+-- =============================================\par
+-- SCRIPT PARA MINIMARKET "DO\'d1A MARTA"\par
+-- PRY2204_Exp3_S8_FormaC\par
+-- =============================================\par
+\par
+-- CONEXI\'d3N: Usuario PRY2204_S8\par
+\par
+-- =============================================\par
+-- CASO 1: IMPLEMENTACI\'d3N DEL MODELO\par
+-- =============================================\par
+\par
+-- Crear tablas en orden secuencial seg\'fan dependencias\par
+\par
+-- Tablas fuertes (independientes)\par
+CREATE TABLE AFP (\par
+    id_afp NUMBER GENERATED ALWAYS AS IDENTITY (START WITH 210 INCREMENT BY 6),\par
+    nombre VARCHAR2(100) NOT NULL,\par
+    CONSTRAINT afp_pk PRIMARY KEY (id_afp)\par
+);\par
+\par
+CREATE TABLE SALUD (\par
+    id_salud NUMBER GENERATED ALWAYS AS IDENTITY (START WITH 2050 INCREMENT BY 10),\par
+    nombre VARCHAR2(100) NOT NULL,\par
+    CONSTRAINT salud_pk PRIMARY KEY (id_salud)\par
+);\par
+\par
+CREATE TABLE REGION (\par
+    id_region NUMBER PRIMARY KEY,\par
+    nombre VARCHAR2(100) NOT NULL,\par
+    CONSTRAINT region_nombre_un UNIQUE (nombre)\par
+);\par
+\par
+CREATE TABLE CIUDAD (\par
+    id_ciudad NUMBER PRIMARY KEY,\par
+    nombre VARCHAR2(100) NOT NULL,\par
+    id_region NUMBER NOT NULL,\par
+    CONSTRAINT ciudad_region_fk FOREIGN KEY (id_region) REFERENCES REGION(id_region)\par
+);\par
+\par
+CREATE TABLE COMUNA (\par
+    id_comuna NUMBER PRIMARY KEY,\par
+    nombre VARCHAR2(100) NOT NULL,\par
+    id_ciudad NUMBER NOT NULL,\par
+    CONSTRAINT comuna_ciudad_fk FOREIGN KEY (id_ciudad) REFERENCES CIUDAD(id_ciudad)\par
+);\par
+\par
+CREATE TABLE MARCA (\par
+    id_marca NUMBER PRIMARY KEY,\par
+    nombre VARCHAR2(100) NOT NULL,\par
+    CONSTRAINT marca_nombre_un UNIQUE (nombre)\par
+);\par
+\par
+CREATE TABLE CATEGORIA (\par
+    id_categoria NUMBER PRIMARY KEY,\par
+    nombre VARCHAR2(100) NOT NULL,\par
+    descripcion VARCHAR2(500),\par
+    CONSTRAINT categoria_nombre_un UNIQUE (nombre)\par
+);\par
+\par
+CREATE TABLE PROVEEDOR (\par
+    id_proveedor NUMBER PRIMARY KEY,\par
+    rut VARCHAR2(12) NOT NULL,\par
+    nombre VARCHAR2(200) NOT NULL,\par
+    giro VARCHAR2(200),\par
+    direccion VARCHAR2(300),\par
+    telefono VARCHAR2(20),\par
+    email VARCHAR2(150),\par
+    id_comuna NUMBER NOT NULL,\par
+    CONSTRAINT proveedor_rut_un UNIQUE (rut),\par
+    CONSTRAINT proveedor_email_un UNIQUE (email),\par
+    CONSTRAINT proveedor_comuna_fk FOREIGN KEY (id_comuna) REFERENCES COMUNA(id_comuna)\par
+);\par
+\par
+CREATE TABLE MEDIO_PAGO (\par
+    id_medio_pago NUMBER PRIMARY KEY,\par
+    nombre VARCHAR2(100) NOT NULL,\par
+    descripcion VARCHAR2(300),\par
+    CONSTRAINT medio_pago_nombre_un UNIQUE (nombre)\par
+);\par
+\par
+-- Tablas dependientes\par
+CREATE TABLE EMPLEADO (\par
+    id_empleado NUMBER PRIMARY KEY,\par
+    rut VARCHAR2(12) NOT NULL,\par
+    nombres VARCHAR2(100) NOT NULL,\par
+    apellido_paterno VARCHAR2(100) NOT NULL,\par
+    apellido_materno VARCHAR2(100),\par
+    fecha_nacimiento DATE,\par
+    direccion VARCHAR2(300),\par
+    telefono VARCHAR2(20),\par
+    email VARCHAR2(150),\par
+    fecha_contrato DATE NOT NULL,\par
+    sueldo_base NUMBER(10,2) NOT NULL,\par
+    bono_jefatura NUMBER(10,2),\par
+    activo CHAR(1) DEFAULT 'S' NOT NULL,\par
+    id_afp NUMBER NOT NULL,\par
+    id_salud NUMBER NOT NULL,\par
+    id_comuna NUMBER NOT NULL,\par
+    jefe_id NUMBER,\par
+    CONSTRAINT empleado_rut_un UNIQUE (rut),\par
+    CONSTRAINT empleado_email_un UNIQUE (email),\par
+    CONSTRAINT empleado_activo_ck CHECK (activo IN ('S', 'N')),\par
+    CONSTRAINT empleado_afp_fk FOREIGN KEY (id_afp) REFERENCES AFP(id_afp),\par
+    CONSTRAINT empleado_salud_fk FOREIGN KEY (id_salud) REFERENCES SALUD(id_salud),\par
+    CONSTRAINT empleado_comuna_fk FOREIGN KEY (id_comuna) REFERENCES COMUNA(id_comuna),\par
+    CONSTRAINT empleado_jefe_fk FOREIGN KEY (jefe_id) REFERENCES EMPLEADO(id_empleado)\par
+);\par
+\par
+CREATE TABLE PRODUCTO (\par
+    id_producto NUMBER PRIMARY KEY,\par
+    nombre VARCHAR2(200) NOT NULL,\par
+    descripcion VARCHAR2(500),\par
+    precio_venta NUMBER(10,2) NOT NULL,\par
+    stock_actual NUMBER(8) DEFAULT 0 NOT NULL,\par
+    stock_minimo NUMBER(8) DEFAULT 3 NOT NULL,\par
+    id_categoria NUMBER NOT NULL,\par
+    id_marca NUMBER NOT NULL,\par
+    id_proveedor NUMBER NOT NULL,\par
+    CONSTRAINT producto_categoria_fk FOREIGN KEY (id_categoria) REFERENCES CATEGORIA(id_categoria),\par
+    CONSTRAINT producto_marca_fk FOREIGN KEY (id_marca) REFERENCES MARCA(id_marca),\par
+    CONSTRAINT producto_proveedor_fk FOREIGN KEY (id_proveedor) REFERENCES PROVEEDOR(id_proveedor)\par
+);\par
+\par
+CREATE TABLE VENDEDOR (\par
+    id_vendedor NUMBER PRIMARY KEY,\par
+    comision NUMBER(5,4) DEFAULT 0 NOT NULL,\par
+    id_empleado NUMBER NOT NULL,\par
+    CONSTRAINT vendedor_empleado_fk FOREIGN KEY (id_empleado) REFERENCES EMPLEADO(id_empleado),\par
+    CONSTRAINT vendedor_comision_ck CHECK (comision BETWEEN 0 AND 0.25)\par
+);\par
+\par
+CREATE TABLE VENTA (\par
+    id_venta NUMBER GENERATED ALWAYS AS IDENTITY (START WITH 5050 INCREMENT BY 3),\par
+    fecha_venta DATE DEFAULT SYSDATE NOT NULL,\par
+    total_venta NUMBER(12,2) NOT NULL,\par
+    id_vendedor NUMBER NOT NULL,\par
+    id_medio_pago NUMBER NOT NULL,\par
+    CONSTRAINT venta_pk PRIMARY KEY (id_venta),\par
+    CONSTRAINT venta_vendedor_fk FOREIGN KEY (id_vendedor) REFERENCES VENDEDOR(id_vendedor),\par
+    CONSTRAINT venta_medio_pago_fk FOREIGN KEY (id_medio_pago) REFERENCES MEDIO_PAGO(id_medio_pago)\par
+);\par
+\par
+CREATE TABLE DETALLE_VENTA (\par
+    id_detalle_venta NUMBER PRIMARY KEY,\par
+    cantidad NUMBER(5) NOT NULL,\par
+    precio_unitario NUMBER(10,2) NOT NULL,\par
+    subtotal NUMBER(12,2) NOT NULL,\par
+    id_venta NUMBER NOT NULL,\par
+    id_producto NUMBER NOT NULL,\par
+    CONSTRAINT detalle_venta_cantidad_ck CHECK (cantidad >= 1),\par
+    CONSTRAINT detalle_venta_venta_fk FOREIGN KEY (id_venta) REFERENCES VENTA(id_venta),\par
+    CONSTRAINT detalle_venta_producto_fk FOREIGN KEY (id_producto) REFERENCES PRODUCTO(id_producto)\par
+);\par
+\par
+-- =============================================\par
+-- CASO 2: MODIFICACI\'d3N DEL MODELO\par
+-- =============================================\par
+\par
+-- Restricci\'f3n CHECK para sueldo m\'ednimo en EMPLEADO\par
+ALTER TABLE EMPLEADO ADD CONSTRAINT empleado_sueldo_minimo_ck \par
+CHECK (sueldo_base >= 400000);\par
+\par
+-- Restricci\'f3n CHECK para comisi\'f3n en VENDEDOR (ya incluida en CREATE TABLE)\par
+-- Restricci\'f3n CHECK para stock m\'ednimo en PRODUCTO (ya incluida en CREATE TABLE)\par
+-- Restricci\'f3n UNIQUE para email en PROVEEDOR (ya incluida en CREATE TABLE)\par
+-- Restricci\'f3n UNIQUE para nombre en MARCA (ya incluida en CREATE TABLE)\par
+\par
+-- Restricci\'f3n CHECK para cantidad en DETALLE_VENTA (ya incluida en CREATE TABLE)\par
+\par
+-- =============================================\par
+-- CASO 3: POBLAMIENTO DEL MODELO\par
+-- =============================================\par
+\par
+-- Crear secuencias para tablas que no usan IDENTITY\par
+CREATE SEQUENCE seq_salud START WITH 2050 INCREMENT BY 10;\par
+CREATE SEQUENCE seq_empleado START WITH 750 INCREMENT BY 3;\par
+\par
+-- Poblar tabla SALUD\par
+INSERT INTO SALUD (id_salud, nombre) VALUES (seq_salud.NEXTVAL, 'Fonasa');\par
+INSERT INTO SALUD (id_salud, nombre) VALUES (seq_salud.NEXTVAL, 'Isapre Banm\'e9dica');\par
+INSERT INTO SALUD (id_salud, nombre) VALUES (seq_salud.NEXTVAL, 'Isapre Colmena');\par
+INSERT INTO SALUD (id_salud, nombre) VALUES (seq_salud.NEXTVAL, 'Isapre Consalud');\par
+INSERT INTO SALUD (id_salud, nombre) VALUES (seq_salud.NEXTVAL, 'Isapre Cruz Blanca');\par
+INSERT INTO SALUD (id_salud, nombre) VALUES (seq_salud.NEXTVAL, 'Isapre Nueva Masvida');\par
+\par
+-- Poblar tabla AFP\par
+INSERT INTO AFP (nombre) VALUES ('Capital');\par
+INSERT INTO AFP (nombre) VALUES ('Cuprum');\par
+INSERT INTO AFP (nombre) VALUES ('Habitat');\par
+INSERT INTO AFP (nombre) VALUES ('Planvital');\par
+INSERT INTO AFP (nombre) VALUES ('Provida');\par
+INSERT INTO AFP (nombre) VALUES ('Modelo');\par
+INSERT INTO AFP (nombre) VALUES ('Uno');\par
+\par
+-- Poblar tabla MEDIO_PAGO\par
+INSERT INTO MEDIO_PAGO (id_medio_pago, nombre, descripcion) VALUES (1, 'Efectivo', 'Pago en moneda local');\par
+INSERT INTO MEDIO_PAGO (id_medio_pago, nombre, descripcion) VALUES (2, 'D\'e9bito', 'Pago con tarjeta de d\'e9bito');\par
+INSERT INTO MEDIO_PAGO (id_medio_pago, nombre, descripcion) VALUES (3, 'Cr\'e9dito', 'Pago con tarjeta de cr\'e9dito');\par
+INSERT INTO MEDIO_PAGO (id_medio_pago, nombre, descripcion) VALUES (4, 'Transferencia', 'Transferencia bancaria');\par
+\par
+-- Poblar tabla REGION\par
+INSERT INTO REGION (id_region, nombre) VALUES (1, 'Regi\'f3n de Tarapac\'e1');\par
+INSERT INTO REGION (id_region, nombre) VALUES (2, 'Regi\'f3n de Antofagasta');\par
+INSERT INTO REGION (id_region, nombre) VALUES (3, 'Regi\'f3n de Atacama');\par
+INSERT INTO REGION (id_region, nombre) VALUES (4, 'Regi\'f3n de Coquimbo');\par
+INSERT INTO REGION (id_region, nombre) VALUES (5, 'Regi\'f3n de Valpara\'edso');\par
+INSERT INTO REGION (id_region, nombre) VALUES (6, 'Regi\'f3n del Libertador Bernardo O''Higgins');\par
+INSERT INTO REGION (id_region, nombre) VALUES (7, 'Regi\'f3n del Maule');\par
+INSERT INTO REGION (id_region, nombre) VALUES (8, 'Regi\'f3n del Biob\'edo');\par
+INSERT INTO REGION (id_region, nombre) VALUES (9, 'Regi\'f3n de La Araucan\'eda');\par
+INSERT INTO REGION (id_region, nombre) VALUES (10, 'Regi\'f3n de Los Lagos');\par
+INSERT INTO REGION (id_region, nombre) VALUES (11, 'Regi\'f3n Ays\'e9n');\par
+INSERT INTO REGION (id_region, nombre) VALUES (12, 'Regi\'f3n de Magallanes');\par
+INSERT INTO REGION (id_region, nombre) VALUES (13, 'Regi\'f3n Metropolitana');\par
+INSERT INTO REGION (id_region, nombre) VALUES (14, 'Regi\'f3n de Los R\'edos');\par
+INSERT INTO REGION (id_region, nombre) VALUES (15, 'Regi\'f3n de Arica y Parinacota');\par
+INSERT INTO REGION (id_region, nombre) VALUES (16, 'Regi\'f3n de \'d1uble');\par
+\par
+-- Poblar tabla EMPLEADO (datos de ejemplo)\par
+INSERT INTO EMPLEADO (id_empleado, rut, nombres, apellido_paterno, apellido_materno, fecha_nacimiento, direccion, telefono, email, fecha_contrato, sueldo_base, bono_jefatura, activo, id_afp, id_salud, id_comuna, jefe_id) \par
+VALUES (seq_empleado.NEXTVAL, '12345678-9', 'Juan Carlos', 'P\'e9rez', 'Gonz\'e1lez', TO_DATE('1985-03-15', 'YYYY-MM-DD'), 'Av. Principal 123', '+56912345678', 'juan.perez@minimarket.com', TO_DATE('2020-01-15', 'YYYY-MM-DD'), 850000, 150000, 'S', 1, 1, 1, NULL);\par
+\par
+INSERT INTO EMPLEADO (id_empleado, rut, nombres, apellido_paterno, apellido_materno, fecha_nacimiento, direccion, telefono, email, fecha_contrato, sueldo_base, bono_jefatura, activo, id_afp, id_salud, id_comuna, jefe_id) \par
+VALUES (seq_empleado.NEXTVAL, '23456789-0', 'Mar\'eda Elena', 'L\'f3pez', 'Silva', TO_DATE('1990-07-22', 'YYYY-MM-DD'), 'Calle Secundaria 456', '+56923456789', 'maria.lopez@minimarket.com', TO_DATE('2021-03-10', 'YYYY-MM-DD'), 650000, NULL, 'S', 2, 2, 1, 750);\par
+\par
+INSERT INTO EMPLEADO (id_empleado, rut, nombres, apellido_paterno, apellido_materno, fecha_nacimiento, direccion, telefono, email, fecha_contrato, sueldo_base, bono_jefatura, activo, id_afp, id_salud, id_comuna, jefe_id) \par
+VALUES (seq_empleado.NEXTVAL, '34567890-1', 'Pedro Antonio', 'Mart\'ednez', 'Rojas', TO_DATE('1988-11-30', 'YYYY-MM-DD'), 'Pasaje Los Alerces 789', '+56934567890', 'pedro.martinez@minimarket.com', TO_DATE('2019-08-20', 'YYYY-MM-DD'), 720000, 80000, 'S', 3, 1, 1, 750);\par
+\par
+INSERT INTO EMPLEADO (id_empleado, rut, nombres, apellido_paterno, apellido_materno, fecha_nacimiento, direccion, telefono, email, fecha_contrato, sueldo_base, bono_jefatura, activo, id_afp, id_salud, id_comuna, jefe_id) \par
+VALUES (seq_empleado.NEXTVAL, '45678901-2', 'Ana Isabel', 'Garc\'eda', 'Fern\'e1ndez', TO_DATE('1992-05-14', 'YYYY-MM-DD'), 'Av. Central 321', '+56945678901', 'ana.garcia@minimarket.com', TO_DATE('2022-02-28', 'YYYY-MM-DD'), 580000, NULL, 'S', 4, 3, 1, 753);\par
+\par
+INSERT INTO EMPLEADO (id_empleado, rut, nombres, apellido_paterno, apellido_materno, fecha_nacimiento, direccion, telefono, email, fecha_contrato, sueldo_base, bono_jefatura, activo, id_afp, id_salud, id_comuna, jefe_id) \par
+VALUES (seq_empleado.NEXTVAL, '56789012-3', 'Carlos Andr\'e9s', 'Rodr\'edguez', 'Mendoza', TO_DATE('1987-12-08', 'YYYY-MM-DD'), 'Calle Los Olmos 654', '+56956789012', 'carlos.rodriguez@minimarket.com', TO_DATE('2020-11-05', 'YYYY-MM-DD'), 780000, 120000, 'S', 5, 2, 1, 750);\par
+\par
+-- Confirmar cambios\par
+COMMIT;\par
+\par
+-- =============================================\par
+-- CASO 4: RECUPERACI\'d3N DE DATOS\par
+-- =============================================\par
+\par
+-- INFORME 1: Simulaci\'f3n de sueldo total con bono de jefatura\par
+SELECT \par
+    id_empleado AS "IDENTIFICADOR",\par
+    nombres || ' ' || apellido_paterno || ' ' || apellido_materno AS "NOMBRE COMPLETO",\par
+    sueldo_base AS "SALARIO",\par
+    bono_jefatura AS "BONIFICACION",\par
+    sueldo_base + NVL(bono_jefatura, 0) AS "SALARIO SIMULADO"\par
+FROM EMPLEADO\par
+WHERE activo = 'S' \par
+    AND bono_jefatura IS NOT NULL\par
+ORDER BY "SALARIO SIMULADO" DESC, apellido_paterno DESC;\par
+\par
+-- INFORME 2: Empleados con sueldo entre $550.000 y $800.000 con posible aumento del 8%\par
+SELECT \par
+    nombres || ' ' || apellido_paterno || ' ' || apellido_materno AS "EMPLEADO",\par
+    sueldo_base AS "SUELDO",\par
+    '8%' AS "POSIBLE AUMENTO",\par
+    sueldo_base * 1.08 AS "SALARIO SIMULADO"\par
+FROM EMPLEADO\par
+WHERE sueldo_base BETWEEN 550000 AND 800000\par
+ORDER BY sueldo_base ASC;\par
+Instrucciones para usar este script:\par
+\par
+Ejecutar el script de creaci\'f3n de usuario primero (PRY2204_Exp3_S8_Script_crea_usuario.sql)\par
+\par
+Conectarse como usuario PRY2204_S8 en SQL Developer\par
+\par
+Copiar y ejecutar el script completo proporcionado arriba\par
+\par
+Guardar el script como archivo .sql (File > Save As > Tipo: Script SQL)\par
+\par
+Subir el archivo .sql al AVA y al repositorio GitHub\par
+\par
+El script incluye:\par
+\par
+\f1\u9989?\f0  Creaci\'f3n de todas las tablas seg\'fan el modelo relacional\par
+\par
+\f1\u9989?\f0  Restricciones PK, FK, UNIQUE y CHECK seg\'fan especificaciones\par
+\par
+\f1\u9989?\f0  Identity para AFP (inicia en 210, incrementa en 6) y VENTA (inicia en 5050, incrementa en 3)\par
+\par
+\f1\u9989?\f0  Secuencias para SALUD y EMPLEADO\par
+\par
+\f1\u9989?\f0  Poblamiento de datos de ejemplo\par
+\par
+\f1\u9989?\f0  Consultas para los informes solicitados\par
+\par
+\'bfNecesitas que ajuste alguna parte espec\'edfica del script o que explique alg\'fan concepto en particular?\par
+\par
+\par
+\par
+\par
+\par
+\par
+Tienes raz\'f3n, en el script que te proporcion\'e9 NO estoy usando operadores como LIKE, BETWEEN, o IN en las cl\'e1usulas WHERE. Solo estoy usando comparaciones b\'e1sicas (=, IS NOT NULL).\par
+\par
+Voy a mejorar las consultas incorporando estos operadores:\par
+\par
+sql\par
+-- =============================================\par
+-- CASO 4: RECUPERACI\'d3N DE DATOS (MEJORADO)\par
+-- =============================================\par
+\par
+-- INFORME 1: Simulaci\'f3n de sueldo total con bono de jefatura\par
+-- Usando IN para el campo activo\par
+SELECT \par
+    id_empleado AS "IDENTIFICADOR",\par
+    nombres || ' ' || apellido_paterno || ' ' || apellido_materno AS "NOMBRE COMPLETO",\par
+    sueldo_base AS "SALARIO",\par
+    bono_jefatura AS "BONIFICACION",\par
+    sueldo_base + NVL(bono_jefatura, 0) AS "SALARIO SIMULADO"\par
+FROM EMPLEADO\par
+WHERE activo IN ('S', 's')  -- Usando IN en lugar de =\par
+    AND bono_jefatura IS NOT NULL\par
+ORDER BY "SALARIO SIMULADO" DESC, apellido_paterno DESC;\par
+\par
+-- INFORME 2: Empleados con sueldo entre $550.000 y $800.000 con posible aumento del 8%\par
+-- Ya estamos usando BETWEEN aqu\'ed\par
+SELECT \par
+    nombres || ' ' || apellido_paterno || ' ' || apellido_materno AS "EMPLEADO",\par
+    sueldo_base AS "SUELDO",\par
+    '8%' AS "POSIBLE AUMENTO",\par
+    sueldo_base * 1.08 AS "SALARIO SIMULADO"\par
+FROM EMPLEADO\par
+WHERE sueldo_base BETWEEN 550000 AND 800000  -- Usando BETWEEN\par
+ORDER BY sueldo_base ASC;\par
+\par
+-- CONSULTAS ADICIONALES DEMOSTRANDO EL USO DE LIKE, BETWEEN E IN:\par
+\par
+-- Consulta 3: Empleados cuyos nombres empiezan con "Mar" (usando LIKE)\par
+SELECT \par
+    id_empleado AS "ID",\par
+    nombres || ' ' || apellido_paterno AS "NOMBRE",\par
+    sueldo_base AS "SALARIO"\par
+FROM EMPLEADO\par
+WHERE nombres LIKE 'Mar%'  -- Usando LIKE con comod\'edn %\par
+ORDER BY apellido_paterno;\par
+\par
+-- Consulta 4: Empleados de ciertas AFPs espec\'edficas (usando IN)\par
+SELECT \par
+    e.id_empleado AS "ID",\par
+    e.nombres || ' ' || e.apellido_paterno AS "NOMBRE",\par
+    a.nombre AS "AFP",\par
+    e.sueldo_base AS "SALARIO"\par
+FROM EMPLEADO e\par
+INNER JOIN AFP a ON e.id_afp = a.id_afp\par
+WHERE a.nombre IN ('Capital', 'Habitat', 'Provida')  -- Usando IN con lista de valores\par
+ORDER BY a.nombre, e.sueldo_base DESC;\par
+\par
+-- Consulta 5: Empleados con email de dominio espec\'edfico (usando LIKE)\par
+SELECT \par
+    id_empleado AS "ID",\par
+    nombres || ' ' || apellido_paterno AS "NOMBRE",\par
+    email AS "CORREO",\par
+    sueldo_base AS "SALARIO"\par
+FROM EMPLEADO\par
+WHERE email LIKE '%@minimarket.com'  -- Usando LIKE para dominio de email\par
+ORDER BY nombres;\par
+\par
+-- Consulta 6: Empleados con sueldos en rangos espec\'edficos (usando BETWEEN y OR)\par
+SELECT \par
+    id_empleado AS "ID",\par
+    nombres || ' ' || apellido_paterno AS "NOMBRE",\par
+    sueldo_base AS "SALARIO",\par
+    CASE \par
+        WHEN sueldo_base BETWEEN 400000 AND 600000 THEN 'Rango Bajo'\par
+        WHEN sueldo_base BETWEEN 600001 AND 800000 THEN 'Rango Medio' \par
+        WHEN sueldo_base > 800000 THEN 'Rango Alto'\par
+    END AS "CATEGORIA_SALARIAL"\par
+FROM EMPLEADO\par
+WHERE sueldo_base BETWEEN 400000 AND 600000  -- Rango bajo\par
+   OR sueldo_base BETWEEN 700000 AND 900000  -- Rango medio-alto\par
+ORDER BY sueldo_base DESC;\par
+\par
+-- Consulta 7: Buscar empleados por patrones en apellidos (usando LIKE con m\'faltiples condiciones)\par
+SELECT \par
+    id_empleado AS "ID",\par
+    nombres || ' ' || apellido_paterno || ' ' || apellido_materno AS "NOMBRE_COMPLETO",\par
+    sueldo_base AS "SALARIO"\par
+FROM EMPLEADO\par
+WHERE apellido_paterno LIKE 'G%'  -- Apellidos que empiezan con G\par
+   OR apellido_materno LIKE '%ez'  -- Apellidos que terminan con "ez"\par
+ORDER BY apellido_paterno;\par
+\par
+-- Consulta 8: Empleados con fechas de contrato en rangos espec\'edficos (usando BETWEEN con fechas)\par
+SELECT \par
+    id_empleado AS "ID",\par
+    nombres || ' ' || apellido_paterno AS "NOMBRE",\par
+    fecha_contrato AS "FECHA_CONTRATO",\par
+    sueldo_base AS "SALARIO"\par
+FROM EMPLEADO\par
+WHERE fecha_contrato BETWEEN TO_DATE('2020-01-01', 'YYYY-MM-DD') \par
+                        AND TO_DATE('2022-12-31', 'YYYY-MM-DD')  -- BETWEEN con fechas\par
+ORDER BY fecha_contrato DESC;\par
+Resumen de los operadores utilizados:\par
+\par
+BETWEEN: Para rangos de valores (sueldos, fechas)\par
+\par
+LIKE: Para b\'fasqueda de patrones en texto (nombres, emails, apellidos)\par
+\par
+'Mar%' - empieza con "Mar"\par
+\par
+'%ez' - termina con "ez"\par
+\par
+'%@minimarket.com' - dominio espec\'edfico\par
+\par
+IN: Para listas de valores espec\'edficos\par
+\par
+IN ('S', 's') - valores activos\par
+\par
+IN ('Capital', 'Habitat', 'Provida') - AFPs espec\'edficas\par
+}
+ 
