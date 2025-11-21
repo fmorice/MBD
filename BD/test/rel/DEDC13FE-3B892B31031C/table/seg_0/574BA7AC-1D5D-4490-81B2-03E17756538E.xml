@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="574BA7AC-1D5D-4490-81B2-03E17756538E" name="Pasajero">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 22:59:19 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pasajero" id="5C21620B-000C-9FE4-F6B3-B349D346DC35">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:00:30 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_pasaporte" id="F9FC89C9-CD10-6AEF-A183-34412C6F54FD">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:04:52 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_completo" id="A29E86F0-3EFE-205A-E7EA-C0D51722EA2C">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:04:52 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="D70A5BF9-6F81-F2E3-69FF-EEF858FFE898">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:04:52 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nacionalidad" id="94F59A86-8E3C-EA26-6D1B-5A6410341CF1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:04:52 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono_contacto" id="D1F72F6F-6EBC-5A92-AA9C-A1180393AA51">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:04:52 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F415380C-FD6F-03C4-AB7F-B5B4EB2C6511" name="Pasajero_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:00:30 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C21620B-000C-9FE4-F6B3-B349D346DC35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

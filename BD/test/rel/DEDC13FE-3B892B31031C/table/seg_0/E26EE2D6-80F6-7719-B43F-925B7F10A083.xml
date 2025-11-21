@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E26EE2D6-80F6-7719-B43F-925B7F10A083" name="Vuelo">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:09:23 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_vuelo" id="4E643E1A-1E7A-FD70-16EA-C1EBFAEFBBFD">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:10:38 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_despege" id="DD6B9A77-7C6C-D670-FA02-AE7BB3715305">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:10:38 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_llegada" id="46CE7EE1-E8D4-F26F-536A-17D3A4BBF73A">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:10:38 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hora_salida" id="653EA785-F690-D11B-787D-80DDD0535D08">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:10:38 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D195CBE-37EA-09FC-4275-71E77461E768" name="Vuelo_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:10:38 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E643E1A-1E7A-FD70-16EA-C1EBFAEFBBFD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

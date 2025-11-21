@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F2D76F95-5A24-169E-56FC-6A9D92D29440" name="Reserva">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:10:46 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_reserva" id="B2D919EF-3D67-ABD7-1D2D-07B75DACFEEF">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:13:17 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_reserva" id="A59EF8F7-6DB5-43C7-B0FC-794660DF95D2">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:13:17 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_pasajero" id="F30627EA-81A2-8D3A-94DE-CA863CED668F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:13:17 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_vuelo" id="34100B7E-32D7-0281-CCA5-BFA7E3B1EDC9">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:13:17 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_empleado" id="D19D7098-E83B-394F-CF71-0E38A49E905E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:16:36 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD68D26B-27F2-A92B-32D9-455D5CD9946F" name="Reserva_PK">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:13:17 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2D919EF-3D67-ABD7-1D2D-07B75DACFEEF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<impliedForeignKeys itemClass="oracle.dbtools.crest.model.design.relational.ImpliedForeignKey">
+<impliedForeignKey name="IDEmpleado" id="E9BEE171-B7CB-3512-9583-932F4EF8EFA9">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:16:43 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<localColumn>D19D7098-E83B-394F-CF71-0E38A49E905E</localColumn>
+<referredTableID>0EB64AF1-D4B9-D1BF-7961-29775A3EA9E3</referredTableID>
+<referredColumnID>4D81596C-03F9-3CF3-7FF0-D66809DF3C31</referredColumnID>
+<referredTableLongName>Empleado</referredTableLongName>
+<referredColumnName>id_empleado</referredColumnName>
+</impliedForeignKey>
+<impliedForeignKey name="IDVuelo" id="D45F9731-A1B2-E993-E416-384291A55002">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:18:55 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<localColumn>34100B7E-32D7-0281-CCA5-BFA7E3B1EDC9</localColumn>
+<referredTableID>E26EE2D6-80F6-7719-B43F-925B7F10A083</referredTableID>
+<referredColumnID>4E643E1A-1E7A-FD70-16EA-C1EBFAEFBBFD</referredColumnID>
+<referredTableLongName>Vuelo</referredTableLongName>
+<referredColumnName>id_vuelo</referredColumnName>
+</impliedForeignKey>
+<impliedForeignKey name="IDPasajero" id="93BBD84E-5C9D-49FD-20AE-3193448FE988">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-17 23:19:31 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<localColumn>F30627EA-81A2-8D3A-94DE-CA863CED668F</localColumn>
+<referredTableID>574BA7AC-1D5D-4490-81B2-03E17756538E</referredTableID>
+<referredColumnID>5C21620B-000C-9FE4-F6B3-B349D346DC35</referredColumnID>
+<referredTableLongName>Pasajero</referredTableLongName>
+<referredColumnName>id_pasajero</referredColumnName>
+</impliedForeignKey>
+</impliedForeignKeys>
+</Table>

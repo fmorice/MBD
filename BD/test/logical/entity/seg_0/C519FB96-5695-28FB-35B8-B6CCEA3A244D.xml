@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C519FB96-5695-28FB-35B8-B6CCEA3A244D" name="PASAJERO">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:19:00 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NumeroPasaporte" id="341BF176-A135-C1B7-14DB-97C2C35DE2C1">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:47:45 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NombreCompleto" id="7386D549-4233-D2DA-0C45-0E13286DBC12">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:48:02 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaNacimiento" id="E58393B8-4879-E463-F23B-4A0188921F64">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:48:18 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nacionalidad" id="1524B5D3-59DF-CE52-7F39-BA2035DCF377">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:48:25 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CorreoElectronico" id="8D769E81-D59C-B9D6-FCB7-ED4FBCACEB2E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:48:30 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TelefonoContacto" id="75B1DB18-B191-9C65-8E15-EFBAD95F265E">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:48:43 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

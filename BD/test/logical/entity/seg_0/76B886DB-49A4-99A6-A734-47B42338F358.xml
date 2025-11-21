@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="76B886DB-49A4-99A6-A734-47B42338F358" name="EMPLEADO">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:49:45 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RUT" id="79CB75D7-4B0C-CFA3-E23E-1C838DD25F33">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:50:09 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NombreCompleto" id="BF733BCB-39D2-CA22-F9FE-722A39362A6F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:50:20 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dirección" id="4D96AD47-EE86-5E47-AE32-6744AEEB549D">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:50:47 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SueldoBase" id="700CD3ED-5FCA-3358-09AA-669457F06F35">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:50:56 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaIngreso" id="602FF7FA-9227-0AF8-8965-E3FAB8ED70AF">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:53:51 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Genero" id="9E08BB7B-3507-88BF-DC07-FB00D47618E7">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:54:01 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TelefonoMovil" id="7C8FDB6B-2C64-2D4E-A64D-17DE0A33614B">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:54:12 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TelefonoContacto" id="41EF05E3-88A2-DE11-AA8A-E7835F475534">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:54:24 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CAD6E15F-35B8-4985-9E07-A32907F847C2" name="RESERVA">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:59:16 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NumeroReserva" id="ED74B7E3-53C6-AA41-202A-3C23276DC65B">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:59:31 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaReserva" id="F079F2C1-1140-F04F-2375-E849E2C33EDE">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:59:44 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FechaViaje" id="9FEC0F7A-887E-8DD1-4029-0B6B6FC1A63F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 22:59:58 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="DF60C34F-DD3F-9F8E-9C5A-96C4EBE5928A">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 23:00:09 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NumeroVuelo" id="2D8C2DC7-BF8E-1B6F-BE92-0BA1FD9FF28F">
+<createdBy>Raul</createdBy>
+<createdTime>2025-08-16 23:00:20 UTC</createdTime>
+<ownerDesignName>test</ownerDesignName>
+<engineerTo>
+<item key="DEDC13FE-8FC5-5327-FDBA-3B892B31031C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>
